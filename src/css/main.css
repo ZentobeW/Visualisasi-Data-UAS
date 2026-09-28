@@ -1893,12 +1893,97 @@ body {
   margin-top: 2px;
 }
 
+/* Conclusions Block in Coda */
+.coda-conclusions-block {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-medium);
+  border-top: 3px solid var(--color-cobalt);
+  border-radius: var(--radius-sm);
+  padding: 28px 32px;
+  margin-bottom: 36px;
+  box-shadow: var(--shadow-card);
+}
+
+.coda-conclusions-title {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.coda-conclusions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.coda-conclusion-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.coda-conclusion-num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-cobalt);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-medium);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.coda-conclusion-body h4 {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.coda-conclusion-body p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.coda-expert-badge-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.coda-expert-badge {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-terracotta);
+}
+
 @media (max-width: 640px) {
   .investigation-coda-curtain {
     padding: 48px 16px;
   }
   .coda-headline {
     font-size: 1.85rem;
+  }
+  .coda-conclusions-block {
+    padding: 20px 16px;
   }
   .coda-synthesis-quote {
     padding: 24px 20px 20px 20px;
