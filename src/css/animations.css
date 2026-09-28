@@ -1,0 +1,479 @@
+/* ==========================================================================
+   PARADOKS HILIRISASI — ANIMATION & MOTION LAYER
+   Principles:
+   1. Every animation is motivated — communicates hierarchy, sequence, or state
+   2. GPU-safe: animate only transform and opacity
+   3. prefers-reduced-motion: all animations collapse to instant
+   4. Scroll-reveals via IntersectionObserver classes toggled by JS
+   5. Perpetual micro-animations only on status indicators (pulse dot)
+   ========================================================================== */
+
+/* --- 1. KEYFRAME DEFINITIONS --- */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Primary hero entrance — from reference spec */
+@keyframes fadeRise {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.88); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* Live dot pulse — perpetual ambient status indicator */
+@keyframes livePulse {
+  0%, 100% { box-shadow: 0 0 0 0px rgba(4, 120, 87, 0.55); opacity: 1; }
+  50%       { box-shadow: 0 0 0 5px rgba(4, 120, 87, 0); opacity: 0.8; }
+}
+
+/* Ken Burns — subtle photographic zoom for editorial images */
+@keyframes kenBurns {
+  from { transform: scale(1.05); }
+  to   { transform: scale(1.0); }
+}
+
+/* Progress bar shimmer — active reading state */
+@keyframes shimmerSlide {
+  from { background-position: -200% center; }
+  to   { background-position: 200% center; }
+}
+
+/* Nav island drops in on load */
+@keyframes navDrop {
+  from { opacity: 0; transform: translateY(-16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Masthead sweeps in */
+@keyframes mastheadReveal {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Underline wipe for nav active */
+@keyframes underlineWipe {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* --- 2. PERPETUAL MICRO-ANIMATIONS (always-on, status-communicating) --- */
+
+.live-indicator-dot {
+  animation: livePulse 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.reading-progress-bar {
+  background: linear-gradient(
+    90deg,
+    var(--color-terracotta) 0%,
+    #e85d26 40%,
+    var(--color-terracotta) 60%,
+    #d4380d 100%
+  );
+  background-size: 200% auto;
+  animation: shimmerSlide 2.5s linear infinite;
+  transition: width 0.12s linear;
+}
+
+/* --- 3. PAGE LOAD ENTRANCE ANIMATIONS --- */
+
+.publication-masthead {
+  animation: mastheadReveal 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes dockRise {
+  from { opacity: 0; transform: translateX(-50%) translateY(28px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+.dock-navigation-wrapper {
+  animation: dockRise 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+}
+
+/* --- 4. HERO — Background image ken burns (content animations in main.css) --- */
+
+/* Full-bleed bg image gets the slow Ken Burns */
+.hero-bg-img {
+  animation: kenBurns 14s ease-out both;
+}
+
+/* Telemetry dossier strip below hero */
+.hero-telemetry-dossier {
+  animation: fadeRise 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
+}
+
+/* --- 5. TELEMETRY METRIC CELLS — STAGGERED SCALE-IN --- */
+
+.dossier-metric-cell:nth-child(1) { animation: scaleIn 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.82s both; }
+.dossier-metric-cell:nth-child(2) { animation: scaleIn 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.96s both; }
+.dossier-metric-cell:nth-child(3) { animation: scaleIn 0.55s cubic-bezier(0.16, 1, 0.3, 1) 1.10s both; }
+.dossier-metric-cell:nth-child(4) { animation: scaleIn 0.55s cubic-bezier(0.16, 1, 0.3, 1) 1.24s both; }
+
+/* --- 6. CHAPTER BANNER IMAGE — ken burns --- */
+
+.chapter-banner-img {
+  animation: kenBurns 10s ease-out both;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --- 7. SCROLL-REVEAL SYSTEM ---
+   JS adds .is-revealed when element enters viewport via IntersectionObserver.
+   Initial state: invisible + offset. Revealed state: visible at position. */
+
+.reveal-ready {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.72s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.72s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-ready.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-28px);
+  transition:
+    opacity 0.72s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.72s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-left.is-revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(28px);
+  transition:
+    opacity 0.72s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.72s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-right.is-revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.90);
+  transition:
+    opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-scale.is-revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Stagger delay helpers */
+.delay-0  { transition-delay: 0ms; }
+.delay-1  { transition-delay: 80ms; }
+.delay-2  { transition-delay: 160ms; }
+.delay-3  { transition-delay: 240ms; }
+.delay-4  { transition-delay: 320ms; }
+.delay-5  { transition-delay: 400ms; }
+
+/* --- 8. STEP CARD ACTIVE STATE — ENHANCED TRANSITION --- */
+
+.step-card {
+  transition:
+    transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    border-left-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.35s ease;
+}
+
+.step-card:not(.is-active) {
+  opacity: 0.65;
+  transform: translateX(0);
+}
+
+.step-card.is-active {
+  opacity: 1;
+  transform: translateX(6px);
+  border-left-color: var(--color-cobalt);
+  box-shadow: 0 6px 24px rgba(30, 64, 175, 0.10), 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.step-card.is-active .step-highlight-val {
+  animation: fadeIn 0.4s ease;
+}
+
+/* --- 9. INTERACTIVE ELEMENT HOVER PHYSICS --- */
+
+.segment-btn,
+.quick-chip,
+.btn-back-to-top,
+.btn-breadcrumb-reset {
+  transition:
+    background-color 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+    color 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.15s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.segment-btn:hover,
+.quick-chip:hover,
+.btn-back-to-top:hover,
+.btn-breadcrumb-reset:hover {
+  transform: translateY(-1px);
+}
+
+.segment-btn:active,
+.quick-chip:active,
+.btn-back-to-top:active,
+.btn-breadcrumb-reset:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Nav links — underline wipe on hover */
+.nav-menu-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-cobalt);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-menu-link:hover::after,
+.nav-menu-link.active::after {
+  transform: scaleX(1);
+}
+
+/* Download links — gap expands on hover to simulate arrow motion */
+.dossier-download-link {
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.dossier-download-link:hover {
+  gap: 8px;
+}
+
+/* --- 10. CHAPTER BANNER REVEAL --- */
+
+.chapter-lead-banner {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.3s ease;
+}
+
+.chapter-lead-banner.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.chapter-lead-banner:hover {
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* Chapter banner copy stagger — eyebrow -> headline -> summary */
+.chapter-eyebrow {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: 0.12s;
+}
+
+.chapter-lead-banner.is-revealed .chapter-eyebrow {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.chapter-headline {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: 0.22s;
+}
+
+.chapter-lead-banner.is-revealed .chapter-headline {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.chapter-summary {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: 0.34s;
+}
+
+.chapter-lead-banner.is-revealed .chapter-summary {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- 11. STAGE GRAPHIC STICKY PANEL --- */
+
+.stage-graphic-sticky {
+  transition:
+    box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --- 12. METHODOLOGY TABLE ROW REVEAL --- */
+
+.dossier-spec-table tbody tr {
+  opacity: 0;
+  transform: translateX(-12px);
+  transition:
+    opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.18s ease;
+}
+
+.dossier-spec-table tbody tr.is-revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.dossier-spec-table tbody tr:nth-child(1) { transition-delay: 0ms; }
+.dossier-spec-table tbody tr:nth-child(2) { transition-delay: 90ms; }
+.dossier-spec-table tbody tr:nth-child(3) { transition-delay: 180ms; }
+.dossier-spec-table tbody tr:nth-child(4) { transition-delay: 270ms; }
+.dossier-spec-table tbody tr:nth-child(5) { transition-delay: 360ms; }
+
+/* --- 13. FOOTER ENTRANCE --- */
+
+.editorial-footer .footer-inner {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-footer.is-revealed .footer-inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- 14. NAV ISLAND SCROLL STATE --- */
+
+.nav-island {
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    padding 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-island.is-scrolled {
+  background: rgba(251, 251, 250, 0.97);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* --- 15. TOOLTIP ENTRY PHYSICS --- */
+
+.data-tooltip {
+  transition:
+    opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(4px);
+}
+
+.data-tooltip.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- 16. SEGMENT BUTTON ACTIVE FEEDBACK --- */
+
+.segment-btn.active {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  transition:
+    background 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+    color 0.22s ease;
+}
+
+/* --- 17. REDUCED MOTION OVERRIDES (mandatory a11y) --- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .live-indicator-dot {
+    animation: none;
+    box-shadow: 0 0 0 2px rgba(4, 120, 87, 0.3);
+  }
+
+  .reading-progress-bar {
+    animation: none;
+    background: var(--color-terracotta);
+    transition: width 0.1s linear;
+  }
+
+  .reveal-ready,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale,
+  .chapter-lead-banner,
+  .chapter-eyebrow,
+  .chapter-headline,
+  .chapter-summary,
+  .dossier-spec-table tbody tr {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .editorial-footer .footer-inner {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .step-card,
+  .step-card:not(.is-active),
+  .step-card.is-active {
+    opacity: 1;
+    transform: none;
+    transition: border-left-color 0.15s ease, box-shadow 0.15s ease;
+  }
+}

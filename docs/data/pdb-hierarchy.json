@@ -1,0 +1,350 @@
+{
+  "name": "PDB Indonesia 2025",
+  "code": "TOTAL",
+  "value": 22808465.2,
+  "growth": 5.11,
+  "children": [
+    {
+      "name": "A. Pertanian, Kehutanan, dan Perikanan",
+      "code": "A",
+      "value": 3120456.5,
+      "growth": 5.38,
+      "children": [
+        {
+          "name": "a. Tanaman Pangan",
+          "value": 546775.8,
+          "growth": 9.94
+        },
+        {
+          "name": "b. Tanaman Hortikultura",
+          "value": 324881.1,
+          "growth": 3.57
+        },
+        {
+          "name": "c. Tanaman Perkebunan",
+          "value": 1075285.5,
+          "growth": 2.95
+        },
+        {
+          "name": "d. Peternakan",
+          "value": 385733.1,
+          "growth": 7.78
+        },
+        {
+          "name": "e. Jasa Pertanian dan Perburuan",
+          "value": 46440.8,
+          "growth": 6.13
+        },
+        {
+          "name": "2. Kehutanan dan Penebangan Kayu",
+          "value": 130591.8,
+          "growth": -0.29
+        },
+        {
+          "name": "3. Perikanan",
+          "value": 610748.4,
+          "growth": 4.95
+        }
+      ]
+    },
+    {
+      "name": "B. Pertambangan dan Penggalian",
+      "code": "B",
+      "value": 2084613.3,
+      "growth": -0.66,
+      "children": [
+        {
+          "name": "1. Pertambangan Minyak, Gas dan Panas Bumi",
+          "value": 525435.8,
+          "growth": 1.14
+        },
+        {
+          "name": "2. Pertambangan Batubara dan Lignit",
+          "value": 827363.6,
+          "growth": -1.26
+        },
+        {
+          "name": "3. Pertambangan Bijih Logam",
+          "value": 404305.7,
+          "growth": -7.92
+        },
+        {
+          "name": "4. Pertambangan dan Penggalian Lainnya",
+          "value": 327508.2,
+          "growth": 4.79
+        }
+      ]
+    },
+    {
+      "name": "C. Industri Pengolahan",
+      "code": "C",
+      "value": 4541519.6,
+      "growth": 5.3,
+      "children": [
+        {
+          "name": "1. Industri Batubara dan Pengilangan Migas",
+          "value": 424185.1,
+          "growth": 6.92
+        },
+        {
+          "name": "1. Industri Makanan dan Minuman",
+          "value": 1698865.1,
+          "growth": 6.38
+        },
+        {
+          "name": "2. Industri Pengolahan Tembakau",
+          "value": 161030.6,
+          "growth": -1.37
+        },
+        {
+          "name": "3. Industri Tekstil dan Pakaian Jadi",
+          "value": 230226.1,
+          "growth": 3.55
+        },
+        {
+          "name": "4. Industri Kulit, Barang dari Kulit dan Alas Kaki",
+          "value": 56136.1,
+          "growth": 3.31
+        },
+        {
+          "name": "5. Industri Kayu, Barang dari Kayu dan Gabus dan Barang Anyaman dari Bambu, Rotan dan Sejenisnya",
+          "value": 86532.2,
+          "growth": -4.48
+        },
+        {
+          "name": "6. Industri Kertas dan Barang dari Kertas; Percetakan dan Reproduksi Media Rekaman",
+          "value": 153421.6,
+          "growth": 3.36
+        },
+        {
+          "name": "7. Industri Kimia, Farmasi dan Obat Tradisional",
+          "value": 436469.9,
+          "growth": 8.35
+        },
+        {
+          "name": "8. Industri Karet, Barang dari Karet dan Plastik",
+          "value": 87254.7,
+          "growth": -4.07
+        },
+        {
+          "name": "9. Industri Barang Galian bukan Logam",
+          "value": 109035.3,
+          "growth": 6.16
+        },
+        {
+          "name": "10. Industri Logam Dasar",
+          "value": 273369.6,
+          "growth": 15.71
+        },
+        {
+          "name": "11. Industri Barang Logam; Komputer, Barang Elektronik, Optik; dan Peralatan Listrik",
+          "value": 382136.4,
+          "growth": 4.74
+        },
+        {
+          "name": "12. Industri Mesin dan Perlengkapan",
+          "value": 65820.9,
+          "growth": 13.98
+        },
+        {
+          "name": "13. Industri Alat Angkutan",
+          "value": 302697.5,
+          "growth": -2.64
+        },
+        {
+          "name": "14. Industri Furnitur",
+          "value": 44992.5,
+          "growth": 1.6
+        },
+        {
+          "name": "15. Industri Pengolahan Lainnya; Jasa Reparasi dan Pemasangan Mesin dan Peralatan",
+          "value": 29346,
+          "growth": 9.24
+        }
+      ]
+    },
+    {
+      "name": "D. Pengadaan Listrik dan Gas",
+      "code": "D",
+      "value": 238693.9,
+      "growth": 3.1,
+      "children": [
+        {
+          "name": "1. Ketenagalistrikan",
+          "value": 207508.5,
+          "growth": 3.44
+        },
+        {
+          "name": "2. Pengadaan Gas dan Produksi Es",
+          "value": 31185.4,
+          "growth": -0.31
+        }
+      ]
+    },
+    {
+      "name": "E. Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",
+      "code": "E",
+      "value": 14856.1,
+      "growth": 1.43,
+      "children": []
+    },
+    {
+      "name": "F. Konstruksi",
+      "code": "F",
+      "value": 2340928.3,
+      "growth": 3.81,
+      "children": []
+    },
+    {
+      "name": "G. Perdagangan Besar dan Eceran; Reparasi Mobil dan Sepeda Motor",
+      "code": "G",
+      "value": 3136599.5,
+      "growth": 5.49,
+      "children": [
+        {
+          "name": "1. Perdagangan Mobil, Sepeda Motor dan Reparasinya",
+          "value": 482089.9,
+          "growth": 0.4
+        },
+        {
+          "name": "2. Perdagangan Besar dan Eceran, Bukan Mobil dan Sepeda Motor",
+          "value": 2654509.6,
+          "growth": 6.55
+        }
+      ]
+    },
+    {
+      "name": "H. Transportasi dan Pergudangan",
+      "code": "H",
+      "value": 1466256.8,
+      "growth": 8.78,
+      "children": [
+        {
+          "name": "1. Angkutan Rel",
+          "value": 24247.1,
+          "growth": 9.14
+        },
+        {
+          "name": "2. Angkutan Darat",
+          "value": 700464.8,
+          "growth": 9.75
+        },
+        {
+          "name": "3. Angkutan Laut",
+          "value": 80135.2,
+          "growth": 10.25
+        },
+        {
+          "name": "4. Angkutan Sungai Danau dan Penyeberangan",
+          "value": 38219.3,
+          "growth": 7.09
+        },
+        {
+          "name": "5. Angkutan Udara",
+          "value": 307405.2,
+          "growth": 1.99
+        },
+        {
+          "name": "6. Pergudangan dan Jasa Penunjang Angkutan; Pos dan Kurir",
+          "value": 315785.2,
+          "growth": 9.66
+        }
+      ]
+    },
+    {
+      "name": "I. Penyediaan Akomodasi dan Makan Minum",
+      "code": "I",
+      "value": 639044.3,
+      "growth": 7.41,
+      "children": [
+        {
+          "name": "1. Penyediaan Akomodasi",
+          "value": 135512.1,
+          "growth": -0.4
+        },
+        {
+          "name": "2. Penyediaan Makan Minum",
+          "value": 503532.2,
+          "growth": 9.34
+        }
+      ]
+    },
+    {
+      "name": "J. Informasi dan Komunikasi",
+      "code": "J",
+      "value": 1048704.4,
+      "growth": 8.35,
+      "children": []
+    },
+    {
+      "name": "K. Jasa Keuangan dan Asuransi",
+      "code": "K",
+      "value": 979735.9,
+      "growth": 3.96,
+      "children": [
+        {
+          "name": "1. Jasa Perantara Keuangan",
+          "value": 636306.3,
+          "growth": 3.4
+        },
+        {
+          "name": "2. Asuransi dan Dana Pensiun",
+          "value": 184746,
+          "growth": 3.48
+        },
+        {
+          "name": "3. Jasa Keuangan Lainnya",
+          "value": 140977.9,
+          "growth": 6.75
+        },
+        {
+          "name": "4. Jasa Penunjang Keuangan",
+          "value": 17705.7,
+          "growth": 6.32
+        }
+      ]
+    },
+    {
+      "name": "L. Real Estate",
+      "code": "L",
+      "value": 534772.3,
+      "growth": 3.58,
+      "children": []
+    },
+    {
+      "name": "M,N. Jasa Perusahaan",
+      "code": "M,N",
+      "value": 471713.9,
+      "growth": 9.1,
+      "children": []
+    },
+    {
+      "name": "O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",
+      "code": "O",
+      "value": 715131.1,
+      "growth": 3.86,
+      "children": []
+    },
+    {
+      "name": "P. Jasa Pendidikan",
+      "code": "P",
+      "value": 666887.3,
+      "growth": 4.99,
+      "children": []
+    },
+    {
+      "name": "Q. Jasa Kesehatan dan Kegiatan Sosial",
+      "code": "Q",
+      "value": 299672.9,
+      "growth": 5.59,
+      "children": []
+    },
+    {
+      "name": "R,S,T,U. Jasa lainnya",
+      "code": "R,S,T,U",
+      "value": 508879.1,
+      "growth": 10.59,
+      "children": []
+    }
+  ]
+}

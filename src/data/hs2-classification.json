@@ -1,0 +1,150 @@
+{
+  "12": {
+    "cat": "Hulu",
+    "nameId": "Biji Mengandung Minyak"
+  },
+  "14": {
+    "cat": "Hulu",
+    "nameId": "Bahan Anyaman Nabati"
+  },
+  "15": {
+    "cat": "Olahan Dasar",
+    "nameId": "Minyak Nabati / CPO Olahan"
+  },
+  "18": {
+    "cat": "Olahan Dasar",
+    "nameId": "Kakao & Olahan Kakao"
+  },
+  "24": {
+    "cat": "Hulu",
+    "nameId": "Tembakau Mentah & Rokok"
+  },
+  "25": {
+    "cat": "Hulu",
+    "nameId": "Garam, Belerang & Tanah"
+  },
+  "26": {
+    "cat": "Hulu",
+    "nameId": "Bijih Logam, Terak & Abu"
+  },
+  "27": {
+    "cat": "Hulu",
+    "nameId": "Bahan Bakar Mineral / Batubara"
+  },
+  "28": {
+    "cat": "Olahan Dasar",
+    "nameId": "Bahan Kimia Anorganik"
+  },
+  "29": {
+    "cat": "Olahan Dasar",
+    "nameId": "Bahan Kimia Organik"
+  },
+  "31": {
+    "cat": "Olahan Dasar",
+    "nameId": "Pupuk Kimia"
+  },
+  "38": {
+    "cat": "Olahan Dasar",
+    "nameId": "Produk Kimia Aneka"
+  },
+  "39": {
+    "cat": "Olahan Dasar",
+    "nameId": "Plastik & Barang Plastik"
+  },
+  "40": {
+    "cat": "Hulu",
+    "nameId": "Karet Alam & Getah Mentah"
+  },
+  "44": {
+    "cat": "Hulu",
+    "nameId": "Kayu & Barang dari Kayu"
+  },
+  "47": {
+    "cat": "Olahan Dasar",
+    "nameId": "Bubur Kayu / Pulp"
+  },
+  "48": {
+    "cat": "Olahan Dasar",
+    "nameId": "Kertas & Karton"
+  },
+  "61": {
+    "cat": "Hilir",
+    "nameId": "Pakaian Jadi Rajutan"
+  },
+  "62": {
+    "cat": "Hilir",
+    "nameId": "Pakaian Jadi Bukan Rajutan"
+  },
+  "64": {
+    "cat": "Hilir",
+    "nameId": "Alas Kaki & Sepatu Olahraga"
+  },
+  "71": {
+    "cat": "Hilir",
+    "nameId": "Perhiasan & Logam Mulia"
+  },
+  "72": {
+    "cat": "Olahan Dasar",
+    "nameId": "Besi & Baja (Smelter NPI/FeNi)"
+  },
+  "73": {
+    "cat": "Hilir",
+    "nameId": "Barang Konstruksi dari Besi/Baja"
+  },
+  "74": {
+    "cat": "Olahan Dasar",
+    "nameId": "Tembaga & Katoda Tembaga"
+  },
+  "75": {
+    "cat": "Olahan Dasar",
+    "nameId": "Nikel Olahan (Matte/MHP/FeNi)"
+  },
+  "76": {
+    "cat": "Olahan Dasar",
+    "nameId": "Aluminium Olahan"
+  },
+  "80": {
+    "cat": "Olahan Dasar",
+    "nameId": "Timah & Produk Timah"
+  },
+  "84": {
+    "cat": "Hilir",
+    "nameId": "Mesin Industri & Peralatan Mekanis"
+  },
+  "85": {
+    "cat": "Hilir",
+    "nameId": "Mesin & Perlengkapan Elektrik"
+  },
+  "87": {
+    "cat": "Hilir",
+    "nameId": "Kendaraan Bermotor & Komponen Otomotif"
+  },
+  "89": {
+    "cat": "Hilir",
+    "nameId": "Kapal Laut & Bangunan Terapung"
+  },
+  "90": {
+    "cat": "Hilir",
+    "nameId": "Instrumen Medis, Optik & Fotografi"
+  },
+  "94": {
+    "cat": "Hilir",
+    "nameId": "Furnitur & Alat Penerangan"
+  },
+  "01": {
+    "cat": "Hulu",
+    "nameId": "Hewan Hidup"
+  },
+  "03": {
+    "cat": "Hulu",
+    "nameId": "Ikan & Krustasea"
+  },
+  "08": {
+    "cat": "Hulu",
+    "nameId": "Buah-buahan Segar"
+  },
+  "09": {
+    "cat": "Hulu",
+    "nameId": "Kopi, Teh & Rempah-rempah"
+  }
+}

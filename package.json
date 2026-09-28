@@ -1,0 +1,29 @@
+{
+  "name": "visualisasi-data-uas",
+  "version": "1.0.0",
+  "description": "Paradoks Hilirisasi: Web Story Visualisasi Data Interaktif dengan D3.js & Scrollama",
+  "main": "src/js/main.js",
+  "scripts": {
+    "preprocess": "node scripts/preprocess.js",
+    "build": "node scripts/build.js",
+    "start": "npx serve src -l 3000"
+  },
+  "keywords": [
+    "data-visualization",
+    "d3",
+    "scrollama",
+    "scrollytelling",
+    "bps",
+    "hilirisasi"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "d3": "^7.9.0",
+    "katex": "^0.18.9",
+    "pdf-parse": "^2.4.5",
+    "pdfjs-dist": "^4.0.379",
+    "xlsx": "^0.18.5"
+  }
+}

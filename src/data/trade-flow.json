@@ -1,0 +1,282 @@
+{
+  "nodes": [
+    {
+      "id": "HS 72 Besi & Baja",
+      "name": "HS 72 Besi & Baja (NPI/FeNi)",
+      "type": "commodity",
+      "category": "Olahan Dasar"
+    },
+    {
+      "id": "HS 75 Nikel Olahan",
+      "name": "HS 75 Nikel Olahan (Matte/MHP)",
+      "type": "commodity",
+      "category": "Olahan Dasar"
+    },
+    {
+      "id": "HS 74 Tembaga",
+      "name": "HS 74 Tembaga & Katoda",
+      "type": "commodity",
+      "category": "Olahan Dasar"
+    },
+    {
+      "id": "HS 27 Batubara",
+      "name": "HS 27 Batubara & Energi Smelter",
+      "type": "commodity",
+      "category": "Hulu"
+    },
+    {
+      "id": "HS 15 CPO Nabati",
+      "name": "HS 15 Lemak & Minyak Nabati",
+      "type": "commodity",
+      "category": "Olahan Dasar"
+    },
+    {
+      "id": "HS 84 Mesin Industri",
+      "name": "HS 84 Impor Mesin Smelter & Pabrik",
+      "type": "commodity",
+      "category": "Hilir"
+    },
+    {
+      "id": "HS 85 Perlengkapan Listrik",
+      "name": "HS 85 Impor Peralatan Elektrik/Turbin",
+      "type": "commodity",
+      "category": "Hilir"
+    },
+    {
+      "id": "CHINA",
+      "name": "Tiongkok (RRT)",
+      "type": "country",
+      "category": null
+    },
+    {
+      "id": "INDIA",
+      "name": "India",
+      "type": "country",
+      "category": null
+    },
+    {
+      "id": "JAPAN",
+      "name": "Jepang",
+      "type": "country",
+      "category": null
+    },
+    {
+      "id": "KOREA REPUBLIC OF",
+      "name": "Korea Selatan",
+      "type": "country",
+      "category": null
+    },
+    {
+      "id": "UNITED STATES",
+      "name": "Amerika Serikat",
+      "type": "country",
+      "category": null
+    },
+    {
+      "id": "ASEAN",
+      "name": "ASEAN (Singapura/Malaysia/Vietnam)",
+      "type": "country",
+      "category": null
+    },
+    {
+      "id": "EUROPE",
+      "name": "Uni Eropa (Jerman/Belanda/Italia)",
+      "type": "country",
+      "category": null
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 7,
+      "value": 17650000000,
+      "category": "Olahan Dasar"
+    },
+    {
+      "source": 0,
+      "target": 8,
+      "value": 4250000000,
+      "category": "Olahan Dasar"
+    },
+    {
+      "source": 0,
+      "target": 10,
+      "value": 1850000000,
+      "category": "Olahan Dasar"
+    },
+    {
+      "source": 0,
+      "target": 12,
+      "value": 2420000000,
+      "category": "Olahan Dasar"
+    },
+    {
+      "source": 0,
+      "target": 13,
+      "value": 1800000000,
+      "category": "Olahan Dasar"
+    },
+    {
+      "source": 1,
+      "target": 7,
+      "value": 7980000000,
+      "category": "Olahan Dasar"
+    },
+    {
+      "source": 1,
+      "target": 9,
+      "value": 680000000,
+      "category": "Olahan Dasar"
+    },
+    {
+      "source": 1,
+      "target": 10,
+      "value": 450000000,
+      "category": "Olahan Dasar"
+    },
+    {
+      "source": 1,
+      "target": 13,
+      "value": 620000000,
+      "category": "Olahan Dasar"
+    },
+    {
+      "source": 2,
+      "target": 7,
+      "value": 1820000000,
+      "category": "Olahan Dasar"
+    },
+    {
+      "source": 2,
+      "target": 9,
+      "value": 940000000,
+      "category": "Olahan Dasar"
+    },
+    {
+      "source": 2,
+      "target": 10,
+      "value": 560000000,
+      "category": "Olahan Dasar"
+    },
+    {
+      "source": 2,
+      "target": 12,
+      "value": 670000000,
+      "category": "Olahan Dasar"
+    },
+    {
+      "source": 3,
+      "target": 7,
+      "value": 14200000000,
+      "category": "Hulu"
+    },
+    {
+      "source": 3,
+      "target": 8,
+      "value": 9800000000,
+      "category": "Hulu"
+    },
+    {
+      "source": 3,
+      "target": 9,
+      "value": 5400000000,
+      "category": "Hulu"
+    },
+    {
+      "source": 3,
+      "target": 12,
+      "value": 7300000000,
+      "category": "Hulu"
+    },
+    {
+      "source": 3,
+      "target": 10,
+      "value": 4120000000,
+      "category": "Hulu"
+    },
+    {
+      "source": 4,
+      "target": 8,
+      "value": 8200000000,
+      "category": "Olahan Dasar"
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "value": 7200000000,
+      "category": "Olahan Dasar"
+    },
+    {
+      "source": 4,
+      "target": 13,
+      "value": 4800000000,
+      "category": "Olahan Dasar"
+    },
+    {
+      "source": 4,
+      "target": 11,
+      "value": 2600000000,
+      "category": "Olahan Dasar"
+    },
+    {
+      "source": 4,
+      "target": 12,
+      "value": 4500000000,
+      "category": "Olahan Dasar"
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "value": 18420000000,
+      "category": "Hilir"
+    },
+    {
+      "source": 5,
+      "target": 9,
+      "value": 5820000000,
+      "category": "Hilir"
+    },
+    {
+      "source": 5,
+      "target": 13,
+      "value": 3450000000,
+      "category": "Hilir"
+    },
+    {
+      "source": 5,
+      "target": 10,
+      "value": 3150000000,
+      "category": "Hilir"
+    },
+    {
+      "source": 5,
+      "target": 11,
+      "value": 2120000000,
+      "category": "Hilir"
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "value": 16950000000,
+      "category": "Hilir"
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "value": 3850000000,
+      "category": "Hilir"
+    },
+    {
+      "source": 6,
+      "target": 10,
+      "value": 2840000000,
+      "category": "Hilir"
+    },
+    {
+      "source": 6,
+      "target": 12,
+      "value": 3650000000,
+      "category": "Hilir"
+    }
+  ]
+}
