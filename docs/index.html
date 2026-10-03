@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paradoks Hilirisasi: Menakar Transformasi Riil Struktur Ekonomi Indonesia</title>
-  <meta name="description" content="Laporan investigasi data perdagangan luar negeri BPS dan PDB: membedah dampak hilirisasi mineral terhadap struktur industri, konsentrasi pasar global, dan rantai nilai nasional.">
+  <title>Realitas Hilirisasi: Menakar Transformasi Riil Struktur Ekonomi Indonesia</title>
+  <meta name="description"
+    content="Laporan investigasi data perdagangan luar negeri BPS dan PDB: membedah dampak hilirisasi mineral terhadap struktur industri, konsentrasi pasar global, dan rantai nilai nasional.">
   <meta name="theme-color" content="#FBFBFA">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Paradoks Hilirisasi: Menakar Transformasi Riil Struktur Ekonomi Indonesia">
-  <meta property="og:description" content="Investigasi visual berbasis data perdagangan luar negeri BPS dan PDB: Treemap PDB, Sankey rantai pasok global, dan PCA profil multivariat komoditas.">
+  <meta property="og:title" content="Realitas Hilirisasi: Menakar Transformasi Riil Struktur Ekonomi Indonesia">
+  <meta property="og:description"
+    content="Investigasi visual berbasis data perdagangan luar negeri BPS dan PDB: Treemap PDB, Sankey rantai pasok global, dan PCA profil multivariat komoditas.">
   <meta property="og:type" content="article">
 
   <!-- Master Editorial Stylesheet -->
@@ -25,11 +28,13 @@
   <!-- KaTeX for High-Precision Mathematical Typesetting -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+    crossorigin="anonymous"></script>
 
   <!-- Application Orchestration Logic -->
   <script type="module" src="./js/main.js" defer></script>
 </head>
+
 <body>
 
   <!-- Top Reading Progress Track -->
@@ -41,12 +46,13 @@
   <!-- Floating Bottom Island Dock — Ergonomic & Flexible Navigation -->
   <div class="dock-navigation-wrapper" id="dock-nav-wrapper">
     <nav class="dock-island" aria-label="Navigasi Laporan">
-      
+
       <!-- Brand / Jump to Top -->
       <a href="#hero" class="dock-brand-btn" title="Kembali ke Judul Utama" aria-label="Kembali ke Judul Utama">
         <span class="dock-brand-text">Paradoks</span>
         <svg width="14" height="14" viewBox="0 0 16 16" fill="none" class="dock-brand-icon" aria-hidden="true">
-          <path d="M8 13V3M3 8l5-5 5 5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8 13V3M3 8l5-5 5 5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+            stroke-linejoin="round" />
         </svg>
       </a>
 
@@ -93,45 +99,41 @@
 
     <!-- Full-bleed background image -->
     <div class="hero-bg" aria-hidden="true">
-      <img
-        src="./assets/images/hero-smelter.jpg"
-        alt=""
-        class="hero-bg-img"
-        loading="eager"
-        fetchpriority="high"
-      >
+      <img src="./assets/images/hero-smelter.jpg" alt="" class="hero-bg-img" loading="eager" fetchpriority="high">
       <div class="hero-bg-overlay"></div>
     </div>
 
     <!-- Centered hero content -->
     <div class="hero-content-wrap">
       <div class="hero-kicker-strip">
-        <span class="kicker-alert">Laporan Khusus</span>
+        <span class="kicker-alert">Laporan Akhir</span>
         <span class="kicker-sep">&bull;</span>
-        <span>Analisis Struktur Ekonomi Indonesia &mdash; Data BPS 2025</span>
+        <span>Analisis Struktur Ekonomi Indonesia &mdash; Data BPS 2024 - 2025</span>
       </div>
 
       <h1 class="hero-headline">
-        Paradoks Hilirisasi:<br>
+        Realitas Hilirisasi:<br>
         Di Balik Ledakan Ekspor Smelter,<br>
         Pangsa Manufaktur Tertahan di <em>18.6%</em>
       </h1>
 
       <p class="hero-lede">
-        Data resmi BPS mengonfirmasi paradoks struktural: nilai ekspor komoditas nikel melampaui US$34 miliar, namun kontribusi industri pengolahan terhadap PDB belum pulih ke level pra-2010, sementara 68% produk smelter terhenti pada olahan primer.
+        Ekspor nikel melampaui US$34 miliar, namun kontribusi manufaktur ke PDB belum pulih sejak pra-2010 karena 68%
+        produk smelter masih tertahan di olahan primer
       </p>
 
       <a href="#hierarki" class="hero-cta-pill">
         Telusuri Data
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
         </svg>
       </a>
 
       <div class="hero-byline-strip">
-        <span class="hero-byline-author">Tim Analisis Data Ekonomi</span>
+        <span class="hero-byline-author">Farhan Kadhafi A.</span>
         <span>&bull;</span>
-        <span>Pembaruan Data BPS Februari 2026</span>
+        <span>Pembaruan Data BPS 2024 - 2025</span>
         <span>&bull;</span>
         <span>Visualisasi Interaktif D3.js</span>
       </div>
@@ -140,7 +142,8 @@
     <!-- Scroll-down cue -->
     <div class="hero-scroll-cue" aria-hidden="true">
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round" />
       </svg>
     </div>
 
@@ -150,7 +153,7 @@
   <div class="hero-telemetry-dossier">
     <div style="max-width: 1360px; margin: 0 auto;">
       <div class="dossier-header-bar">
-        <span class="dossier-tag">Ringkasan Telemetri Makroekonomi Nasional (ADHB 2025)</span>
+        <span class="dossier-tag">Ringkasan Makroekonomi Nasional (ADHB 2025)</span>
         <span class="dossier-source">Sumber: BPS Berita Resmi Statistik No. 15/02/Th. XXVIII</span>
       </div>
 
@@ -158,25 +161,29 @@
         <div class="dossier-metric-cell">
           <div class="metric-num terracotta" id="counter-pdb-share">18.6%</div>
           <div class="metric-label">Pangsa Manufaktur thd PDB</div>
-          <div class="metric-desc">Tertahan di bawah target reindustrialisasi RPJMN (21.0%) dan jauh di bawah era 2005-2008 (&gt;25%).</div>
+          <div class="metric-desc">Tertahan di bawah target reindustrialisasi RPJMN (21.0%) dan jauh di bawah era
+            2005-2008 (&gt;25%).</div>
         </div>
 
         <div class="dossier-metric-cell">
           <div class="metric-num cobalt" id="counter-export-growth">+15.7%</div>
           <div class="metric-label">Pertumbuhan Industri Logam Dasar</div>
-          <div class="metric-desc">Tumbuh lebih dari tiga kali lipat dibanding rata-rata manufaktur non-migas (+4.6%), menciptakan disparitas sektoral.</div>
+          <div class="metric-desc">Tumbuh lebih dari tiga kali lipat dibanding rata-rata manufaktur non-migas (+4.6%),
+            menciptakan disparitas sektoral.</div>
         </div>
 
         <div class="dossier-metric-cell">
           <div class="metric-num amber" id="counter-raw-ratio">68.2%</div>
           <div class="metric-label">Porsi Olahan Tingkat Pertama</div>
-          <div class="metric-desc">Mayoritas ekspor masih berwujud NPI, FeNi, dan MHP berdaya serap domestik minim, diekspor ke fasilitas hilir luar negeri.</div>
+          <div class="metric-desc">Mayoritas ekspor masih berwujud NPI, FeNi, dan MHP berdaya serap domestik minim,
+            diekspor ke fasilitas hilir luar negeri.</div>
         </div>
 
         <div class="dossier-metric-cell">
           <div class="metric-num terracotta">82.4%</div>
           <div class="metric-label">Konsentrasi Ekspor ke Tiongkok</div>
-          <div class="metric-desc">Indeks Herfindahl-Hirschman (HHI) komoditas nikel mencapai 0.68, menunjukkan kerentanan pasar pembeli tunggal.</div>
+          <div class="metric-desc">Indeks Herfindahl-Hirschman (HHI) komoditas nikel mencapai 0.68, menunjukkan
+            kerentanan pasar pembeli tunggal.</div>
         </div>
       </div>
     </div>
@@ -191,13 +198,16 @@
         <div class="chapter-banner-grid">
           <div class="chapter-banner-copy">
             <span class="chapter-eyebrow">Bab 01 &bull; Hierarki Nilai Tambah</span>
-            <h2 class="chapter-headline">Anatomi PDB: Ketika Pertumbuhan Terkunci di Sektor Tertentu</h2>
+            <h2 class="chapter-headline">Struktur PDB: Ketika Pertumbuhan Terkunci di Sektor Tertentu</h2>
             <p class="chapter-summary">
-              Menelusuri kontribusi nominal dan laju pertumbuhan riil 17 sektor lapangan usaha PDB Indonesia berdasarkan data resmi BPS Atas Dasar Harga Berlaku (ADHB). Apakah lonjakan hilirisasi memicu industrialisasi menyeluruh atau hanya kantong pertumbuhan terisolasi?
+              Menelusuri kontribusi nominal dan laju pertumbuhan riil 17 sektor lapangan usaha PDB Indonesia berdasarkan
+              data resmi BPS Atas Dasar Harga Berlaku (ADHB). Apakah lonjakan hilirisasi memicu industrialisasi
+              menyeluruh atau hanya kantong pertumbuhan terisolasi?
             </p>
           </div>
           <div class="chapter-banner-image-wrap">
-            <img src="./assets/images/mining-sulawesi.jpg" alt="Tambang nikel terbuka laterit berundak di Sulawesi" class="chapter-banner-img">
+            <img src="./assets/images/mining-sulawesi.jpg" alt="Tambang nikel terbuka laterit berundak di Sulawesi"
+              class="chapter-banner-img">
           </div>
         </div>
       </div>
@@ -212,10 +222,12 @@
             </div>
             <h3>Pangsa Industri Pengolahan Terjebak di Bawah 19%</h3>
             <p>
-              Meskipun nilai nominal PDB Indonesia mencapai Rp 22.100 Triliun pada 2025, porsi Industri Pengolahan (Sektor C) terhadap kue ekonomi nasional stagnan di level 18.6%. 
+              Meskipun nilai nominal PDB Indonesia mencapai Rp 22.100 Triliun pada 2025, porsi Industri Pengolahan
+              (Sektor C) terhadap kue ekonomi nasional stagnan di level 18.6%.
             </p>
             <p>
-              Fenomena deindustrialisasi prematur yang berlangsung sejak awal 2000-an belum terbalik secara signifikan. Kontribusi manufaktur yang pernah menyentuh 27.4% pada 2001 kini belum menunjukkan pemulihan ke atas 20%.
+              Fenomena deindustrialisasi prematur yang berlangsung sejak awal 2000-an belum terbalik secara signifikan.
+              Kontribusi manufaktur yang pernah menyentuh 27.4% pada 2001 kini belum menunjukkan pemulihan ke atas 20%.
             </p>
             <div class="step-highlight-box">
               <div class="step-highlight-title">Total PDB Nasional 2025:</div>
@@ -230,10 +242,13 @@
             </div>
             <h3>Logam Dasar Melompat, Manufaktur Padat Karya Menurun</h3>
             <p>
-              Di dalam tubuh Sektor C, terjadi ketimpangan ekstrem. Industri Logam Dasar (KBLI 24) tumbuh melesat sebesar +15.7% YoY, didorong oleh operasional puluhan smelter rotary kiln-electric furnace (RKEF).
+              Di dalam tubuh Sektor C, terjadi ketimpangan ekstrem. Industri Logam Dasar (KBLI 24) tumbuh melesat
+              sebesar +15.7% YoY, didorong oleh operasional puluhan smelter rotary kiln-electric furnace (RKEF).
             </p>
             <p>
-              Sebaliknya, sektor manufaktur padat karya tradisional penyerap jutaan tenaga kerja seperti Tekstil dan Pakaian Jadi (KBLI 13-14) serta Industri Kulit dan Alas Kaki (KBLI 15) mengalami kontraksi rata-rata -2.1% hingga stagnan di 1.2%.
+              Sebaliknya, sektor manufaktur padat karya tradisional penyerap jutaan tenaga kerja seperti Tekstil dan
+              Pakaian Jadi (KBLI 13-14) serta Industri Kulit dan Alas Kaki (KBLI 15) mengalami kontraksi rata-rata -2.1%
+              hingga stagnan di 1.2%.
             </p>
             <div class="step-highlight-box">
               <div class="step-highlight-title">Laju Pertumbuhan Logam Dasar:</div>
@@ -248,10 +263,13 @@
             </div>
             <h3>Pergeseran Nilai Tambah Hulu ke Olahan Primer</h3>
             <p>
-              Sektor Pertambangan dan Penggalian (Sektor B) menyumbang 9.8% PDB dengan laju pertumbuhan moderat 3.8%. Pelarangan ekspor bijih nikel mentah sejak 2020 berhasil memindahkan pencatatan output dari Sektor B ke subsektor Industri Logam Dasar di Sektor C.
+              Sektor Pertambangan dan Penggalian (Sektor B) menyumbang 9.8% PDB dengan laju pertumbuhan moderat 3.8%.
+              Pelarangan ekspor bijih nikel mentah sejak 2020 berhasil memindahkan pencatatan output dari Sektor B ke
+              subsektor Industri Logam Dasar di Sektor C.
             </p>
             <p>
-              Namun, karena pengolahan terhenti pada Nickel Pig Iron (NPI) dan Feronikel berkadar 10–12% Ni, multiplier effect terhadap industri mesin, otomotif listrik, dan manufaktur barang jadi domestik belum terwujud.
+              Namun, karena pengolahan terhenti pada Nickel Pig Iron (NPI) dan Feronikel berkadar 10–12% Ni, multiplier
+              effect terhadap industri mesin, otomotif listrik, dan manufaktur barang jadi domestik belum terwujud.
             </p>
             <div class="step-highlight-box">
               <div class="step-highlight-title">Rasio Retensi Nilai Tambah Domestik:</div>
@@ -267,8 +285,10 @@
               <span class="breadcrumb-item active" data-level="root">Seluruh PDB 2025</span>
             </nav>
             <div class="segmented-controls" role="tablist">
-              <button class="segment-btn active" data-hierarchy-view="treemap" id="btn-treemap" role="tab" aria-selected="true">Treemap Proporsional</button>
-              <button class="segment-btn" data-hierarchy-view="sunburst" id="btn-sunburst" role="tab" aria-selected="false">Sunburst Radial</button>
+              <button class="segment-btn active" data-hierarchy-view="treemap" id="btn-treemap" role="tab"
+                aria-selected="true">Treemap Proporsional</button>
+              <button class="segment-btn" data-hierarchy-view="sunburst" id="btn-sunburst" role="tab"
+                aria-selected="false">Sunburst Radial</button>
             </div>
           </div>
 
@@ -310,11 +330,14 @@
             <span class="chapter-eyebrow">Bab 02 &bull; Dinamika Perdagangan Internasional</span>
             <h2 class="chapter-headline">Asimetri Rantai Pasok: Ekspor Monosentris dan Impor Mesin Modal</h2>
             <p class="chapter-summary">
-              Membedah aliran fisik dan moneter perdagangan luar negeri Indonesia. Di mana hasil hilirisasi bermuara, dan seberapa besar devisa hasil ekspor yang kembali terserap untuk mengimpor teknologi dan peralatan peleburan?
+              Membedah aliran fisik dan moneter perdagangan luar negeri Indonesia. Di mana hasil hilirisasi bermuara,
+              dan seberapa besar devisa hasil ekspor yang kembali terserap untuk mengimpor teknologi dan peralatan
+              peleburan?
             </p>
           </div>
           <div class="chapter-banner-image-wrap">
-            <img src="./assets/images/trade-port.jpg" alt="Kapal kargo curah bersandar di pelabuhan laut ekspor mineral" class="chapter-banner-img">
+            <img src="./assets/images/trade-port.jpg" alt="Kapal kargo curah bersandar di pelabuhan laut ekspor mineral"
+              class="chapter-banner-img">
           </div>
         </div>
       </div>
@@ -329,10 +352,12 @@
             </div>
             <h3>82.4% Ekspor Logam Terkunci ke Pasar Tiongkok</h3>
             <p>
-              Data ekspor HS 72 (Besi dan Baja) dan HS 75 (Nikel) BPS memperlihatkan konsentrasi geografis yang sangat tinggi. Lebih dari US$28 miliar dari total ekspor logam dasar diserap oleh Republik Rakyat Tiongkok.
+              Data ekspor HS 72 (Besi dan Baja) dan HS 75 (Nikel) BPS memperlihatkan konsentrasi geografis yang sangat
+              tinggi. Lebih dari US$28 miliar dari total ekspor logam dasar diserap oleh Republik Rakyat Tiongkok.
             </p>
             <p>
-              Tingginya ketergantungan pada satu negara pembeli menempatkan neraca perdagangan Indonesia rentan terhadap fluktuasi siklus properti dan kapasitas produksi baja stainless domestik Tiongkok.
+              Tingginya ketergantungan pada satu negara pembeli menempatkan neraca perdagangan Indonesia rentan terhadap
+              fluktuasi siklus properti dan kapasitas produksi baja stainless domestik Tiongkok.
             </p>
             <div class="step-highlight-box">
               <div class="step-highlight-title">Total Arus Ekspor ke Tiongkok:</div>
@@ -347,10 +372,13 @@
             </div>
             <h3>Lonjakan Impor Mesin & Peralatan Listrik (HS 84 & 85)</h3>
             <p>
-              Pembangunan dan pemeliharaan smelter menuntut impor mesin industri dan peralatan mekanikal berat dalam jumlah masif. Impor HS 84 (Mesin/Peralatan Mekanik) melampaui US$32 miliar per tahun.
+              Pembangunan dan pemeliharaan smelter menuntut impor mesin industri dan peralatan mekanikal berat dalam
+              jumlah masif. Impor HS 84 (Mesin/Peralatan Mekanik) melampaui US$32 miliar per tahun.
             </p>
             <p>
-              Akibatnya, surplus dagang bruto yang dicatatkan dari ekspor komoditas nikel sebagian besar tergerus oleh kebutuhan valuta asing untuk membayar komponen mesin, turbin listrik captive power plant, dan suku cadang industri dari luar negeri.
+              Akibatnya, surplus dagang bruto yang dicatatkan dari ekspor komoditas nikel sebagian besar tergerus oleh
+              kebutuhan valuta asing untuk membayar komponen mesin, turbin listrik captive power plant, dan suku cadang
+              industri dari luar negeri.
             </p>
             <div class="step-highlight-box">
               <div class="step-highlight-title">Impor Mesin Industri (HS 84):</div>
@@ -365,10 +393,13 @@
             </div>
             <h3>Perjalanan Menuju Prekursor dan Katoda Baterai EV</h3>
             <p>
-              Meski investasi High-Pressure Acid Leach (HPAL) yang memproduksi Mixed Hydroxide Precipitate (MHP) dan Nikel Sulfat terus bertambah, fasilitas manufaktur sel baterai dan baterai pack terintegrasi di dalam negeri masih sangat terbatas.
+              Meski investasi High-Pressure Acid Leach (HPAL) yang memproduksi Mixed Hydroxide Precipitate (MHP) dan
+              Nikel Sulfat terus bertambah, fasilitas manufaktur sel baterai dan baterai pack terintegrasi di dalam
+              negeri masih sangat terbatas.
             </p>
             <p>
-              Mayoritas MHP tetap diekspor untuk diproses menjadi prekursor di luar negeri, sebelum produk akhir baterai diimpor kembali ke Indonesia dengan harga berkali-kali lipat.
+              Mayoritas MHP tetap diekspor untuk diproses menjadi prekursor di luar negeri, sebelum produk akhir baterai
+              diimpor kembali ke Indonesia dengan harga berkali-kali lipat.
             </p>
             <div class="step-highlight-box">
               <div class="step-highlight-title">Porsi Olahan Akhir (Baterai Pack):</div>
@@ -380,12 +411,15 @@
         <!-- Right Sticky Graphic Viewport -->
         <div class="stage-graphic-sticky reveal-right" style="transition-delay: 0.1s;">
           <div class="stage-top-bar">
-            <div style="font-family: var(--font-mono); font-size: 0.78rem; font-weight: 700; color: var(--text-primary);">
+            <div
+              style="font-family: var(--font-mono); font-size: 0.78rem; font-weight: 700; color: var(--text-primary);">
               Aliran Perdagangan: Komoditas &rarr; Smelter &rarr; Negara Tujuan
             </div>
             <div class="segmented-controls" role="tablist">
-              <button class="segment-btn active" data-flow-view="sankey" id="btn-sankey" role="tab" aria-selected="true">Sankey Alluvial</button>
-              <button class="segment-btn" data-flow-view="chord" id="btn-chord" role="tab" aria-selected="false">Chord Bilateral</button>
+              <button class="segment-btn active" data-flow-view="sankey" id="btn-sankey" role="tab"
+                aria-selected="true">Sankey Alluvial</button>
+              <button class="segment-btn" data-flow-view="chord" id="btn-chord" role="tab" aria-selected="false">Chord
+                Bilateral</button>
             </div>
           </div>
 
@@ -404,9 +438,12 @@
 
           <div class="stage-bottom-bar">
             <div class="chart-legend-row">
-              <div class="legend-chip"><span class="legend-color-dot" style="background:#C2410C;"></span> Bahan Mentah (Hulu)</div>
-              <div class="legend-chip"><span class="legend-color-dot" style="background:#D97706;"></span> Olahan Dasar / Smelter</div>
-              <div class="legend-chip"><span class="legend-color-dot" style="background:#1E40AF;"></span> Mitra Dagang / Manufaktur</div>
+              <div class="legend-chip"><span class="legend-color-dot" style="background:#C2410C;"></span> Bahan Mentah
+                (Hulu)</div>
+              <div class="legend-chip"><span class="legend-color-dot" style="background:#D97706;"></span> Olahan Dasar /
+                Smelter</div>
+              <div class="legend-chip"><span class="legend-color-dot" style="background:#1E40AF;"></span> Mitra Dagang /
+                Manufaktur</div>
             </div>
             <span>Arahkan kursor pada simpul untuk melihat volume</span>
           </div>
@@ -422,12 +459,17 @@
             <span class="chapter-eyebrow">Bab 03 &bull; Analisis Multivariat Komparatif</span>
             <h2 class="chapter-headline">Matriks Komoditas: Menguji Kualitas Nilai Tambah</h2>
             <p class="chapter-summary">
-              Mengevaluasi 35+ kelompok komoditas ekspor utama BPS melalui reduksi dimensi Principal Component Analysis (PCA), Parallel Coordinates interaktif, dan matriks korelasi. Apakah lonjakan ekspor nikel menghasilkan diversifikasi atau justru mengunci Indonesia dalam spesialisasi berisiko?
+              Mengevaluasi 35+ kelompok komoditas ekspor utama BPS melalui reduksi dimensi Principal Component Analysis
+              (PCA), Parallel Coordinates interaktif, dan matriks korelasi. Apakah lonjakan ekspor nikel menghasilkan
+              diversifikasi atau justru mengunci Indonesia dalam spesialisasi berisiko?
             </p>
           </div>
-          <div class="chapter-banner-image-wrap" style="background: var(--bg-sunken); display: flex; align-items: center; justify-content: center; padding: 24px;">
-            <div style="font-family: var(--font-mono); font-size: 0.8rem; line-height: 1.6; color: var(--text-secondary); max-width: 380px;">
-              <strong style="color: var(--text-primary); display: block; margin-bottom: 6px;">Metrik Pengujian Multivariat:</strong>
+          <div class="chapter-banner-image-wrap"
+            style="background: var(--bg-sunken); display: flex; align-items: center; justify-content: center; padding: 24px;">
+            <div
+              style="font-family: var(--font-mono); font-size: 0.8rem; line-height: 1.6; color: var(--text-secondary); max-width: 380px;">
+              <strong style="color: var(--text-primary); display: block; margin-bottom: 6px;">Metrik Pengujian
+                Multivariat:</strong>
               &bull; PC1: Skala Ekspor & Nilai Nominal (54.2% Varians)<br>
               &bull; PC2: Pertumbuhan & Diversifikasi Pasar (21.8% Varians)<br>
               &bull; Indeks Konsentrasi Herfindahl-Hirschman (HHI)<br>
@@ -447,10 +489,13 @@
             </div>
             <h3>Pemisahan Klaster pada Ruang Komponen Utama</h3>
             <p>
-              PCA biplot memetakan pemisahan tajam antara dua kelompok komoditas. Klaster pertama (HS 72 Besi Baja, HS 27 Batubara, HS 15 CPO) mendominasi sumbu PC1 dengan nilai ekspor raksasa namun memiliki skor diversifikasi pasar dan intensitas nilai tambah rendah.
+              PCA biplot memetakan pemisahan tajam antara dua kelompok komoditas. Klaster pertama (HS 72 Besi Baja, HS
+              27 Batubara, HS 15 CPO) mendominasi sumbu PC1 dengan nilai ekspor raksasa namun memiliki skor
+              diversifikasi pasar dan intensitas nilai tambah rendah.
             </p>
             <p>
-              Sebaliknya, manufaktur berteknologi tinggi seperti Mesin & Elektronik (HS 84/85) berada pada kuadran dengan rasio net trade negatif, menegaskan ketergantungan impor yang belum teratasi.
+              Sebaliknya, manufaktur berteknologi tinggi seperti Mesin & Elektronik (HS 84/85) berada pada kuadran
+              dengan rasio net trade negatif, menegaskan ketergantungan impor yang belum teratasi.
             </p>
             <div class="step-highlight-box">
               <div class="step-highlight-title">Proporsi Varians Terjelaskan (PC1+PC2):</div>
@@ -465,10 +510,13 @@
             </div>
             <h3>Trade-off Pertumbuhan Tinggi dan Konsentrasi Pasar</h3>
             <p>
-              Pada visualisasi Parallel Coordinates, perhatikan lintasan garis komoditas hilirisasi mineral. Meskipun pertumbuhan YoY sangat tinggi (+15% hingga +30%), garis tersebut anjlok tajam saat melintasi sumbu diversifikasi pasar (HHI > 0.45).
+              Pada visualisasi Parallel Coordinates, perhatikan lintasan garis komoditas hilirisasi mineral. Meskipun
+              pertumbuhan YoY sangat tinggi (+15% hingga +30%), garis tersebut anjlok tajam saat melintasi sumbu
+              diversifikasi pasar (HHI > 0.45).
             </p>
             <p>
-              Perekonomian yang terlalu bertumpu pada segelintir komoditas berkonsentrasi tinggi memiliki volatilitas tinggi terhadap guncangan regulasi impor negara mitra dan tren penurunan harga komoditas global.
+              Perekonomian yang terlalu bertumpu pada segelintir komoditas berkonsentrasi tinggi memiliki volatilitas
+              tinggi terhadap guncangan regulasi impor negara mitra dan tren penurunan harga komoditas global.
             </p>
             <div class="step-highlight-box">
               <div class="step-highlight-title">Indeks HHI Nikel & Olahan:</div>
@@ -483,10 +531,13 @@
             </div>
             <h3>Rendahnya Nilai Tukar per Kilogram Ekspor</h3>
             <p>
-              Metrik Intensitas Berat ($/Kg) mengungkap bahwa komoditas ekspor Indonesia masih didominasi produk bermassa besar dengan harga per satuan relatif murah ($0.8 - $3.5/kg), seperti NPI dan bauksit olahan.
+              Metrik Intensitas Berat ($/Kg) mengungkap bahwa komoditas ekspor Indonesia masih didominasi produk
+              bermassa besar dengan harga per satuan relatif murah ($0.8 - $3.5/kg), seperti NPI dan bauksit olahan.
             </p>
             <p>
-              Sebaliknya, produk impor barang modal bernilai hingga $80 - $250/kg. Ketimpangan terms of trade fisik ini menjadi alasan mengapa pertumbuhan tonase ekspor tidak otomatis menciptakan lompatan upah dan pendapatan per kapita nasional.
+              Sebaliknya, produk impor barang modal bernilai hingga $80 - $250/kg. Ketimpangan terms of trade fisik ini
+              menjadi alasan mengapa pertumbuhan tonase ekspor tidak otomatis menciptakan lompatan upah dan pendapatan
+              per kapita nasional.
             </p>
             <div class="step-highlight-box">
               <div class="step-highlight-title">Intensitas Nilai Ekspor Logam:</div>
@@ -498,13 +549,17 @@
         <!-- Right Sticky Graphic Viewport -->
         <div class="stage-graphic-sticky reveal-right" style="transition-delay: 0.1s;">
           <div class="stage-top-bar">
-            <div style="font-family: var(--font-mono); font-size: 0.78rem; font-weight: 700; color: var(--text-primary);">
+            <div
+              style="font-family: var(--font-mono); font-size: 0.78rem; font-weight: 700; color: var(--text-primary);">
               Workbench Multivariat Profil Komoditas
             </div>
             <div class="segmented-controls" role="tablist">
-              <button class="segment-btn active" data-multi-view="pca" id="btn-pca" role="tab" aria-selected="true">PCA Biplot</button>
-              <button class="segment-btn" data-multi-view="parcoords" id="btn-parcoords" role="tab" aria-selected="false">Parallel Coordinates</button>
-              <button class="segment-btn" data-multi-view="heatmap" id="btn-heatmap" role="tab" aria-selected="false">Clustered Heatmap</button>
+              <button class="segment-btn active" data-multi-view="pca" id="btn-pca" role="tab" aria-selected="true">PCA
+                Biplot</button>
+              <button class="segment-btn" data-multi-view="parcoords" id="btn-parcoords" role="tab"
+                aria-selected="false">Parallel Coordinates</button>
+              <button class="segment-btn" data-multi-view="heatmap" id="btn-heatmap" role="tab"
+                aria-selected="false">Clustered Heatmap</button>
             </div>
           </div>
 
@@ -514,19 +569,26 @@
 
           <!-- Live Interactive Inspector Dock -->
           <div class="multivariate-inspector-dock" id="multivariate-inspector">
-            <span class="inspector-meta-title" id="inspector-name">Arahkan kursor ke komoditas untuk inspeksi parameter</span>
+            <span class="inspector-meta-title" id="inspector-name">Arahkan kursor ke komoditas untuk inspeksi
+              parameter</span>
             <div class="inspector-metric-strip">
-              <div class="inspector-metric-item"><span>Ekspor:</span> <span class="inspector-val" id="inspector-exp">-</span></div>
-              <div class="inspector-metric-item"><span>YoY:</span> <span class="inspector-val" id="inspector-growth">-</span></div>
-              <div class="inspector-metric-item"><span>HHI:</span> <span class="inspector-val" id="inspector-hhi">-</span></div>
+              <div class="inspector-metric-item"><span>Ekspor:</span> <span class="inspector-val"
+                  id="inspector-exp">-</span></div>
+              <div class="inspector-metric-item"><span>YoY:</span> <span class="inspector-val"
+                  id="inspector-growth">-</span></div>
+              <div class="inspector-metric-item"><span>HHI:</span> <span class="inspector-val"
+                  id="inspector-hhi">-</span></div>
             </div>
           </div>
 
           <div class="stage-bottom-bar">
             <div class="chart-legend-row">
-              <div class="legend-chip"><span class="legend-color-dot" style="background:#C2410C;"></span> Bahan Mentah</div>
-              <div class="legend-chip"><span class="legend-color-dot" style="background:#D97706;"></span> Olahan Dasar / Smelter</div>
-              <div class="legend-chip"><span class="legend-color-dot" style="background:#1E40AF;"></span> Manufaktur Jadi</div>
+              <div class="legend-chip"><span class="legend-color-dot" style="background:#C2410C;"></span> Bahan Mentah
+              </div>
+              <div class="legend-chip"><span class="legend-color-dot" style="background:#D97706;"></span> Olahan Dasar /
+                Smelter</div>
+              <div class="legend-chip"><span class="legend-color-dot" style="background:#1E40AF;"></span> Manufaktur
+                Jadi</div>
             </div>
             <span>Sumbu interaktif dapat di-brush (Parallel Coords)</span>
           </div>
@@ -537,13 +599,16 @@
     <!-- SEKSI SINTESIS PENYELIDIKAN DATA (CODA EDITORIAL) -->
     <section class="synthesis-editorial-section" id="sintesis" aria-label="Sintesis Penyelidikan Data">
       <div class="synthesis-container">
-        
+
         <!-- Section Header: Academic / Investigative Journalistic Rigor -->
         <header class="synthesis-header">
           <div class="synthesis-kicker">Sintesis Penyelidikan Data &bull; Rekonsiliasi Temuan 2024–2025</div>
           <h2 class="synthesis-title">Tiga Ujian Struktural Menuju Industrialisasi Sejati</h2>
           <p class="synthesis-summary">
-            Dari dekomposisi struktur PDB di Babak 1, pemetaan aliran neraca perdagangan di Babak 2, hingga pengujian multivariat 35 komoditas di Babak 3, data resmi BPS mengonfirmasi paradoks mendasar: ledakan nilai ekspor smelter olahan primer belum otomatis bertransformasi menjadi kemandirian manufaktur nasional yang kokoh.
+            Dari dekomposisi struktur PDB di bagian 1, pemetaan aliran neraca perdagangan di bagian 2, hingga pengujian
+            multivariat 35 komoditas di bagian 3, data resmi BPS mengonfirmasi permasalahan mendasar: ledakan nilai
+            ekspor
+            smelter olahan primer belum otomatis bertransformasi menjadi kemandirian manufaktur nasional yang kokoh.
           </p>
         </header>
 
@@ -553,7 +618,9 @@
             <div class="finding-index">Temuan 01 / PDB &amp; Nilai Tambah</div>
             <h3 class="finding-heading">Pangsa Manufaktur Nasional Terstagnasi</h3>
             <p class="finding-text">
-              Meskipun output Industri Logam Dasar melonjak +15.7%, kontribusi Industri Pengolahan terhadap PDB nasional tertahan di kisaran 18.6%. Penguatan hulu smelter belum tersambung ke industri hilir domestik, sementara sektor manufaktur padat karya justru mengalami kontraksi.
+              Meskipun output Industri Logam Dasar melonjak +15.7%, kontribusi Industri Pengolahan terhadap PDB nasional
+              tertahan di kisaran 18.6%. Penguatan hulu smelter belum tersambung ke industri hilir domestik, sementara
+              sektor manufaktur padat karya justru mengalami kontraksi.
             </p>
             <div class="finding-meta-metric">
               <span class="finding-metric-label">Share Manufaktur thd PDB</span>
@@ -565,7 +632,9 @@
             <div class="finding-index">Temuan 02 / Konsentrasi Pasar</div>
             <h3 class="finding-heading">Kerentanan Monopsoni &amp; Impor Modal</h3>
             <p class="finding-text">
-              Sebanyak 82.4% ekspor logam olahan terkunci ke satu negara pembeli (Tiongkok). Pada saat bersamaan, surplus devisa terkuras kembali untuk membiayai impor mesin industri, generator, dan peralatan smelter senilai lebih dari US$32 miliar per tahun.
+              Sebanyak 82.4% ekspor logam olahan terkunci ke satu negara pembeli (Tiongkok). Pada saat bersamaan,
+              surplus devisa terkuras kembali untuk membiayai impor mesin industri, generator, dan peralatan smelter
+              senilai lebih dari US$32 miliar per tahun.
             </p>
             <div class="finding-meta-metric">
               <span class="finding-metric-label">Konsentrasi Ekspor Mitra</span>
@@ -577,7 +646,9 @@
             <div class="finding-index">Temuan 03 / Intensitas Fisik</div>
             <h3 class="finding-heading">Kesenjangan Nilai Tukar ($/Kg)</h3>
             <p class="finding-text">
-              Mayoritas ekspor nikel masih berupa komoditas olahan antara bermassa besar dengan harga rata-rata ~US$2.40 per kg, sangat timpang jika dibandingkan dengan mesin modal impor yang mencapai US$88.00 per kg. Lonjakan tonase belum menghasilkan lompatan upah riil.
+              Mayoritas ekspor nikel masih berupa komoditas olahan antara bermassa besar dengan harga rata-rata ~US$2.40
+              per kg, sangat timpang jika dibandingkan dengan mesin modal impor yang mencapai US$88.00 per kg. Lonjakan
+              tonase belum menghasilkan lompatan upah riil.
             </p>
             <div class="finding-meta-metric">
               <span class="finding-metric-label">Rasio Nilai Tukar Fisik</span>
@@ -590,11 +661,15 @@
         <div class="synthesis-quote-wrapper">
           <blockquote class="synthesis-editorial-quote">
             <p class="synthesis-quote-paragraph">
-              &ldquo;Hilirisasi yang diagung-agungkan saat ini sejatinya baru tahap industrialisasi dangkal. Kita bersorak karena angka ekspor melonjak tajam, namun kita lupa bahwa nilai tambah terbesar dan serapan tenaga kerja berkualitas justru dinikmati oleh negara yang memproduksi barang jadinya, bukan di tanah air.&rdquo;
+              &ldquo;Hilirisasi yang diagung-agungkan saat ini sejatinya baru tahap industrialisasi dangkal. Kita
+              bersorak karena angka ekspor melonjak tajam, namun kita lupa bahwa nilai tambah terbesar dan serapan
+              tenaga kerja berkualitas justru dinikmati oleh negara yang memproduksi barang jadinya, bukan di tanah
+              air.&rdquo;
             </p>
             <footer class="synthesis-quote-citation">
-              <div class="synthesis-quote-author">Intisari Pemikiran Faisal Basri</div>
-              <div class="synthesis-quote-role">Ekonom Senior INDEF &bull; Dosen Fakultas Ekonomi dan Bisnis Universitas Indonesia</div>
+              <div class="synthesis-quote-author">Faisal Basri</div>
+              <div class="synthesis-quote-role">Ekonom Senior INDEF &bull; Dosen Fakultas Ekonomi dan Bisnis Universitas
+                Indonesia</div>
             </footer>
           </blockquote>
         </div>
@@ -608,9 +683,11 @@
         <div class="chapter-banner-grid" style="grid-template-columns: 1fr;">
           <div class="chapter-banner-copy">
             <span class="chapter-eyebrow">Transparansi Data & Landasan Akademik</span>
-            <h2 class="chapter-headline">Dossier Metodologi, Sumber Data BPS, dan Reproduktibilitas</h2>
+            <h2 class="chapter-headline">Metodologi, Sumber Data BPS, dan Reproduktibilitas</h2>
             <p class="chapter-summary">
-              Laporan investigasi visual ini dibangun menggunakan data mikro resmi publikasi Badan Pusat Statistik (BPS) Republik Indonesia dan Kementerian Perdagangan. Seluruh dataset telah dibersihkan, dinormalisasi, dan disediakan dalam format terbuka.
+              Laporan investigasi visual ini dibangun menggunakan data mikro resmi publikasi Badan Pusat Statistik (BPS)
+              Republik Indonesia. Seluruh dataset telah dibersihkan, dinormalisasi, dan
+              disediakan dalam format terbuka.
             </p>
           </div>
         </div>
@@ -686,19 +763,265 @@
                     </div>
 
                     <div class="math-display-card">
-                      <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>H</mi><mi>H</mi><mi>I</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msubsup><mi>s</mi><mi>i</mi><mn>2</mn></msubsup><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msup><mrow><mo fence="true">(</mo><mfrac><msub><mi>X</mi><mi>i</mi></msub><mrow><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>X</mi><mi>k</mi></msub></mrow></mfrac><mo>×</mo><mn>100</mn><mo fence="true">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">HHI = \sum_{i=1}^{n} s_i^2 = \sum_{i=1}^{n} \left( \frac{X_i}{\sum_{k=1}^n X_k} \times 100 \right)^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0813em;">H</span><span class="mord mathnormal" style="margin-right:0.0813em;">H</span><span class="mord mathnormal" style="margin-right:0.0785em;">I</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.9291em;vertical-align:-1.2777em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6514em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-2.453em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.9317em;vertical-align:-1.2777em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6514em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.3057em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8043em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2997em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.994em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">100</span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.654em;"><span style="top:-3.9029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span>
+                      <span class="katex-display"><span class="katex"><span class="katex-mathml"><math
+                              xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <semantics>
+                                <mrow>
+                                  <mi>H</mi>
+                                  <mi>H</mi>
+                                  <mi>I</mi>
+                                  <mo>=</mo>
+                                  <munderover>
+                                    <mo>∑</mo>
+                                    <mrow>
+                                      <mi>i</mi>
+                                      <mo>=</mo>
+                                      <mn>1</mn>
+                                    </mrow>
+                                    <mi>n</mi>
+                                  </munderover>
+                                  <msubsup>
+                                    <mi>s</mi>
+                                    <mi>i</mi>
+                                    <mn>2</mn>
+                                  </msubsup>
+                                  <mo>=</mo>
+                                  <munderover>
+                                    <mo>∑</mo>
+                                    <mrow>
+                                      <mi>i</mi>
+                                      <mo>=</mo>
+                                      <mn>1</mn>
+                                    </mrow>
+                                    <mi>n</mi>
+                                  </munderover>
+                                  <msup>
+                                    <mrow>
+                                      <mo fence="true">(</mo>
+                                      <mfrac>
+                                        <msub>
+                                          <mi>X</mi>
+                                          <mi>i</mi>
+                                        </msub>
+                                        <mrow>
+                                          <munderover>
+                                            <mo>∑</mo>
+                                            <mrow>
+                                              <mi>k</mi>
+                                              <mo>=</mo>
+                                              <mn>1</mn>
+                                            </mrow>
+                                            <mi>n</mi>
+                                          </munderover>
+                                          <msub>
+                                            <mi>X</mi>
+                                            <mi>k</mi>
+                                          </msub>
+                                        </mrow>
+                                      </mfrac>
+                                      <mo>×</mo>
+                                      <mn>100</mn>
+                                      <mo fence="true">)</mo>
+                                    </mrow>
+                                    <mn>2</mn>
+                                  </msup>
+                                </mrow>
+                                <annotation encoding="application/x-tex">HHI = \sum_{i=1}^{n} s_i^2 = \sum_{i=1}^{n}
+                                  \left( \frac{X_i}{\sum_{k=1}^n X_k} \times 100 \right)^2</annotation>
+                              </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span
+                                class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal"
+                                style="margin-right:0.0813em;">H</span><span class="mord mathnormal"
+                                style="margin-right:0.0813em;">H</span><span class="mord mathnormal"
+                                style="margin-right:0.0785em;">I</span><span class="mspace"
+                                style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                                style="margin-right:0.2778em;"></span></span><span class="katex-base"><span
+                                class="katex-strut" style="height:2.9291em;vertical-align:-1.2777em;"></span><span
+                                class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span
+                                      class="vlist" style="height:1.6514em;"><span
+                                        style="top:-1.8723em;margin-left:0em;"><span class="pstrut"
+                                          style="height:3.05em;"></span><span
+                                          class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span
+                                              class="mord mathnormal mtight">i</span><span
+                                              class="mrel mtight">=</span><span
+                                              class="mord mtight">1</span></span></span></span><span
+                                        style="top:-3.05em;"><span class="pstrut"
+                                          style="height:3.05em;"></span><span><span
+                                            class="mop op-symbol large-op">∑</span></span></span><span
+                                        style="top:-4.3em;margin-left:0em;"><span class="pstrut"
+                                          style="height:3.05em;"></span><span
+                                          class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span
+                                              class="mord mathnormal mtight">n</span></span></span></span></span><span
+                                      class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                      style="height:1.2777em;"><span></span></span></span></span></span><span
+                                class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span
+                                  class="mord mathnormal">s</span><span class="msupsub"><span
+                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                        style="height:0.8641em;"><span
+                                          style="top:-2.453em;margin-left:0em;margin-right:0.05em;"><span class="pstrut"
+                                            style="height:2.7em;"></span><span
+                                            class="katex-sizing reset-size6 size3 mtight"><span
+                                              class="mord mathnormal mtight">i</span></span></span><span
+                                          style="top:-3.113em;margin-right:0.05em;"><span class="pstrut"
+                                            style="height:2.7em;"></span><span
+                                            class="katex-sizing reset-size6 size3 mtight"><span
+                                              class="mord mtight">2</span></span></span></span><span
+                                        class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                        style="height:0.247em;"><span></span></span></span></span></span></span><span
+                                class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span
+                                class="mspace" style="margin-right:0.2778em;"></span></span><span
+                              class="katex-base"><span class="katex-strut"
+                                style="height:2.9317em;vertical-align:-1.2777em;"></span><span
+                                class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span
+                                      class="vlist" style="height:1.6514em;"><span
+                                        style="top:-1.8723em;margin-left:0em;"><span class="pstrut"
+                                          style="height:3.05em;"></span><span
+                                          class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span
+                                              class="mord mathnormal mtight">i</span><span
+                                              class="mrel mtight">=</span><span
+                                              class="mord mtight">1</span></span></span></span><span
+                                        style="top:-3.05em;"><span class="pstrut"
+                                          style="height:3.05em;"></span><span><span
+                                            class="mop op-symbol large-op">∑</span></span></span><span
+                                        style="top:-4.3em;margin-left:0em;"><span class="pstrut"
+                                          style="height:3.05em;"></span><span
+                                          class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span
+                                              class="mord mathnormal mtight">n</span></span></span></span></span><span
+                                      class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                      style="height:1.2777em;"><span></span></span></span></span></span><span
+                                class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span
+                                  class="minner"><span class="mopen delimcenter" style="top:0em;"><span
+                                      class="delimsizing size3">(</span></span><span class="mord"><span
+                                      class="mopen nulldelimiter"></span><span class="mfrac"><span
+                                        class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height:1.3603em;"><span style="top:-2.3057em;"><span class="pstrut"
+                                                style="height:3em;"></span><span class="mord"><span class="mop"><span
+                                                    class="mop op-symbol small-op"
+                                                    style="position:relative;top:0em;">∑</span><span
+                                                    class="msupsub"><span class="vlist-t vlist-t2"><span
+                                                        class="vlist-r"><span class="vlist"
+                                                          style="height:0.8043em;"><span
+                                                            style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span
+                                                              class="pstrut" style="height:2.7em;"></span><span
+                                                              class="katex-sizing reset-size6 size3 mtight"><span
+                                                                class="mord mtight"><span class="mord mathnormal mtight"
+                                                                  style="margin-right:0.0315em;">k</span><span
+                                                                  class="mrel mtight">=</span><span
+                                                                  class="mord mtight">1</span></span></span></span><span
+                                                            style="top:-3.2029em;margin-right:0.05em;"><span
+                                                              class="pstrut" style="height:2.7em;"></span><span
+                                                              class="katex-sizing reset-size6 size3 mtight"><span
+                                                                class="mord mathnormal mtight">n</span></span></span></span><span
+                                                          class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                          class="vlist"
+                                                          style="height:0.2997em;"><span></span></span></span></span></span></span><span
+                                                  class="mspace" style="margin-right:0.1667em;"></span><span
+                                                  class="mord"><span class="mord mathnormal"
+                                                    style="margin-right:0.0785em;">X</span><span class="msupsub"><span
+                                                      class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                                          style="height:0.3361em;"><span
+                                                            style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span
+                                                              class="pstrut" style="height:2.7em;"></span><span
+                                                              class="katex-sizing reset-size6 size3 mtight"><span
+                                                                class="mord mathnormal mtight"
+                                                                style="margin-right:0.0315em;">k</span></span></span></span><span
+                                                          class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                          class="vlist"
+                                                          style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span
+                                              style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span
+                                                class="frac-line"
+                                                style="border-bottom-width:0.04em;"></span></span><span
+                                              style="top:-3.677em;"><span class="pstrut"
+                                                style="height:3em;"></span><span class="mord"><span class="mord"><span
+                                                    class="mord mathnormal" style="margin-right:0.0785em;">X</span><span
+                                                    class="msupsub"><span class="vlist-t vlist-t2"><span
+                                                        class="vlist-r"><span class="vlist"
+                                                          style="height:0.3117em;"><span
+                                                            style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span
+                                                              class="pstrut" style="height:2.7em;"></span><span
+                                                              class="katex-sizing reset-size6 size3 mtight"><span
+                                                                class="mord mathnormal mtight">i</span></span></span></span><span
+                                                          class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                          class="vlist"
+                                                          style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height:0.994em;"><span></span></span></span></span></span><span
+                                      class="mclose nulldelimiter"></span></span><span class="mspace"
+                                    style="margin-right:0.2222em;"></span><span class="mbin">×</span><span
+                                    class="mspace" style="margin-right:0.2222em;"></span><span
+                                    class="mord">100</span><span class="mclose delimcenter" style="top:0em;"><span
+                                      class="delimsizing size3">)</span></span></span><span class="msupsub"><span
+                                    class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                        style="height:1.654em;"><span style="top:-3.9029em;margin-right:0.05em;"><span
+                                            class="pstrut" style="height:2.7em;"></span><span
+                                            class="katex-sizing reset-size6 size3 mtight"><span
+                                              class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span>
                     </div>
 
                     <div class="math-legend-grid">
-                      <span class="math-sym"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">s_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span>
+                      <span class="math-sym"><span class="katex"><span class="katex-mathml"><math
+                              xmlns="http://www.w3.org/1998/Math/MathML">
+                              <semantics>
+                                <mrow>
+                                  <msub>
+                                    <mi>s</mi>
+                                    <mi>i</mi>
+                                  </msub>
+                                </mrow>
+                                <annotation encoding="application/x-tex">s_i</annotation>
+                              </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span
+                                class="katex-strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span
+                                class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span
+                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                        style="height:0.3117em;"><span
+                                          style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut"
+                                            style="height:2.7em;"></span><span
+                                            class="katex-sizing reset-size6 size3 mtight"><span
+                                              class="mord mathnormal mtight">i</span></span></span></span><span
+                                        class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                        style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span>
                       <span class="math-sep">:</span>
-                      <span class="math-desc">Pangsa pasar ekspor komoditas ke negara mitra ke-<em>i</em> (skala persentase 0&ndash;100)</span>
+                      <span class="math-desc">Pangsa pasar ekspor komoditas ke negara mitra ke-<em>i</em> (skala
+                        persentase 0&ndash;100)</span>
 
-                      <span class="math-sym"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">X_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span>
+                      <span class="math-sym"><span class="katex"><span class="katex-mathml"><math
+                              xmlns="http://www.w3.org/1998/Math/MathML">
+                              <semantics>
+                                <mrow>
+                                  <msub>
+                                    <mi>X</mi>
+                                    <mi>i</mi>
+                                  </msub>
+                                </mrow>
+                                <annotation encoding="application/x-tex">X_i</annotation>
+                              </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span
+                                class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span
+                                class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span
+                                  class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span
+                                        class="vlist" style="height:0.3117em;"><span
+                                          style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span
+                                            class="pstrut" style="height:2.7em;"></span><span
+                                            class="katex-sizing reset-size6 size3 mtight"><span
+                                              class="mord mathnormal mtight">i</span></span></span></span><span
+                                        class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                        style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span>
                       <span class="math-sep">:</span>
-                      <span class="math-desc">Nilai transaksi ekspor riil komoditas ke negara tujuan <em>i</em> (USD FOB)</span>
+                      <span class="math-desc">Nilai transaksi ekspor riil komoditas ke negara tujuan <em>i</em> (USD
+                        FOB)</span>
 
-                      <span class="math-sym"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></span>
+                      <span class="math-sym"><span class="katex"><span class="katex-mathml"><math
+                              xmlns="http://www.w3.org/1998/Math/MathML">
+                              <semantics>
+                                <mrow>
+                                  <mi>n</mi>
+                                </mrow>
+                                <annotation encoding="application/x-tex">n</annotation>
+                              </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span
+                                class="katex-strut" style="height:0.4306em;"></span><span
+                                class="mord mathnormal">n</span></span></span></span></span>
                       <span class="math-sep">:</span>
                       <span class="math-desc">Jumlah total seluruh negara mitra dagang tujuan ekspor</span>
                     </div>
@@ -706,7 +1029,28 @@
                     <div class="math-badge-threshold">
                       <div class="math-threshold-badge">Ambang Risiko Monopsoni</div>
                       <div class="math-threshold-desc">
-                        Nilai <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mi>H</mi><mi>I</mi><mo>&gt;</mo><mn>2.500</mn></mrow><annotation encoding="application/x-tex">HHI &gt; 2.500</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.0813em;">H</span><span class="mord mathnormal" style="margin-right:0.0813em;">H</span><span class="mord mathnormal" style="margin-right:0.0785em;">I</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2.500</span></span></span></span> mengindikasikan pasar tujuan sangat terkonsentrasi pada pembeli tunggal.
+                        Nilai <span class="katex"><span class="katex-mathml"><math
+                              xmlns="http://www.w3.org/1998/Math/MathML">
+                              <semantics>
+                                <mrow>
+                                  <mi>H</mi>
+                                  <mi>H</mi>
+                                  <mi>I</mi>
+                                  <mo>&gt;</mo>
+                                  <mn>2.500</mn>
+                                </mrow>
+                                <annotation encoding="application/x-tex">HHI &gt; 2.500</annotation>
+                              </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span
+                                class="katex-strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span
+                                class="mord mathnormal" style="margin-right:0.0813em;">H</span><span
+                                class="mord mathnormal" style="margin-right:0.0813em;">H</span><span
+                                class="mord mathnormal" style="margin-right:0.0785em;">I</span><span class="mspace"
+                                style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace"
+                                style="margin-right:0.2778em;"></span></span><span class="katex-base"><span
+                                class="katex-strut" style="height:0.6444em;"></span><span
+                                class="mord">2.500</span></span></span></span> mengindikasikan pasar tujuan sangat
+                        terkonsentrasi pada pembeli tunggal.
                       </div>
                     </div>
                   </div>
@@ -728,25 +1072,216 @@
                     </div>
 
                     <div class="math-display-card">
-                      <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>X</mi><mo>=</mo><mo stretchy="false">(</mo><mi>I</mi><mo>−</mo><mi>A</mi><msup><mo stretchy="false">)</mo><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>Y</mi><mo>=</mo><mi>L</mi><mo>⋅</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X = (I - A)^{-1} Y = L \cdot Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0785em;">I</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.1141em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal">L</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span></span></span></span></span>
+                      <span class="katex-display"><span class="katex"><span class="katex-mathml"><math
+                              xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <semantics>
+                                <mrow>
+                                  <mi>X</mi>
+                                  <mo>=</mo>
+                                  <mo stretchy="false">(</mo>
+                                  <mi>I</mi>
+                                  <mo>−</mo>
+                                  <mi>A</mi>
+                                  <msup>
+                                    <mo stretchy="false">)</mo>
+                                    <mrow>
+                                      <mo>−</mo>
+                                      <mn>1</mn>
+                                    </mrow>
+                                  </msup>
+                                  <mi>Y</mi>
+                                  <mo>=</mo>
+                                  <mi>L</mi>
+                                  <mo>⋅</mo>
+                                  <mi>Y</mi>
+                                </mrow>
+                                <annotation encoding="application/x-tex">X = (I - A)^{-1} Y = L \cdot Y</annotation>
+                              </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span
+                                class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal"
+                                style="margin-right:0.0785em;">X</span><span class="mspace"
+                                style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                                style="margin-right:0.2778em;"></span></span><span class="katex-base"><span
+                                class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span
+                                class="mopen">(</span><span class="mord mathnormal"
+                                style="margin-right:0.0785em;">I</span><span class="mspace"
+                                style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace"
+                                style="margin-right:0.2222em;"></span></span><span class="katex-base"><span
+                                class="katex-strut" style="height:1.1141em;vertical-align:-0.25em;"></span><span
+                                class="mord mathnormal">A</span><span class="mclose"><span class="mclose">)</span><span
+                                  class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                        style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span
+                                            class="pstrut" style="height:2.7em;"></span><span
+                                            class="katex-sizing reset-size6 size3 mtight"><span
+                                              class="mord mtight"><span class="mord mtight">−</span><span
+                                                class="mord mtight">1</span></span></span></span></span></span></span></span></span><span
+                                class="mord mathnormal" style="margin-right:0.2222em;">Y</span><span class="mspace"
+                                style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                                style="margin-right:0.2778em;"></span></span><span class="katex-base"><span
+                                class="katex-strut" style="height:0.6833em;"></span><span
+                                class="mord mathnormal">L</span><span class="mspace"
+                                style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace"
+                                style="margin-right:0.2222em;"></span></span><span class="katex-base"><span
+                                class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal"
+                                style="margin-right:0.2222em;">Y</span></span></span></span></span>
                     </div>
 
                     <div class="math-legend-grid">
-                      <span class="math-sym"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">X</span></span></span></span></span>
+                      <span class="math-sym"><span class="katex"><span class="katex-mathml"><math
+                              xmlns="http://www.w3.org/1998/Math/MathML">
+                              <semantics>
+                                <mrow>
+                                  <mi>X</mi>
+                                </mrow>
+                                <annotation encoding="application/x-tex">X</annotation>
+                              </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span
+                                class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal"
+                                style="margin-right:0.0785em;">X</span></span></span></span></span>
                       <span class="math-sep">:</span>
-                      <span class="math-desc">Vektor kolom total output perekonomian nasional (<em>n</em> &times; 1)</span>
+                      <span class="math-desc">Vektor kolom total output perekonomian nasional (<em>n</em> &times;
+                        1)</span>
 
-                      <span class="math-sym"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span></span>
+                      <span class="math-sym"><span class="katex"><span class="katex-mathml"><math
+                              xmlns="http://www.w3.org/1998/Math/MathML">
+                              <semantics>
+                                <mrow>
+                                  <mi>A</mi>
+                                </mrow>
+                                <annotation encoding="application/x-tex">A</annotation>
+                              </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span
+                                class="katex-strut" style="height:0.6833em;"></span><span
+                                class="mord mathnormal">A</span></span></span></span></span>
                       <span class="math-sep">:</span>
-                      <span class="math-desc">Matriks koefisien input teknologi (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><msub><mi>x</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mi mathvariant="normal">/</mi><msub><mi>X</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">a_{ij} = x_{ij} / X_j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord">/</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span>)</span>
+                      <span class="math-desc">Matriks koefisien input teknologi (<span class="katex"><span
+                            class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <semantics>
+                                <mrow>
+                                  <msub>
+                                    <mi>a</mi>
+                                    <mrow>
+                                      <mi>i</mi>
+                                      <mi>j</mi>
+                                    </mrow>
+                                  </msub>
+                                  <mo>=</mo>
+                                  <msub>
+                                    <mi>x</mi>
+                                    <mrow>
+                                      <mi>i</mi>
+                                      <mi>j</mi>
+                                    </mrow>
+                                  </msub>
+                                  <mi mathvariant="normal">/</mi>
+                                  <msub>
+                                    <mi>X</mi>
+                                    <mi>j</mi>
+                                  </msub>
+                                </mrow>
+                                <annotation encoding="application/x-tex">a_{ij} = x_{ij} / X_j</annotation>
+                              </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span
+                                class="katex-strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span
+                                class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span
+                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                        style="height:0.3117em;"><span
+                                          style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut"
+                                            style="height:2.7em;"></span><span
+                                            class="katex-sizing reset-size6 size3 mtight"><span
+                                              class="mord mtight"><span class="mord mathnormal mtight"
+                                                style="margin-right:0.0572em;">ij</span></span></span></span></span><span
+                                        class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                        style="height:0.2861em;"><span></span></span></span></span></span></span><span
+                                class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span
+                                class="mspace" style="margin-right:0.2778em;"></span></span><span
+                              class="katex-base"><span class="katex-strut"
+                                style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord"><span
+                                  class="mord mathnormal">x</span><span class="msupsub"><span
+                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                        style="height:0.3117em;"><span
+                                          style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut"
+                                            style="height:2.7em;"></span><span
+                                            class="katex-sizing reset-size6 size3 mtight"><span
+                                              class="mord mtight"><span class="mord mathnormal mtight"
+                                                style="margin-right:0.0572em;">ij</span></span></span></span></span><span
+                                        class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                        style="height:0.2861em;"><span></span></span></span></span></span></span><span
+                                class="mord">/</span><span class="mord"><span class="mord mathnormal"
+                                  style="margin-right:0.0785em;">X</span><span class="msupsub"><span
+                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                        style="height:0.3117em;"><span
+                                          style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span
+                                            class="pstrut" style="height:2.7em;"></span><span
+                                            class="katex-sizing reset-size6 size3 mtight"><span
+                                              class="mord mathnormal mtight"
+                                              style="margin-right:0.0572em;">j</span></span></span></span><span
+                                        class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                        style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span>)</span>
 
-                      <span class="math-sym"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi></mrow><annotation encoding="application/x-tex">L</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal">L</span></span></span></span></span>
+                      <span class="math-sym"><span class="katex"><span class="katex-mathml"><math
+                              xmlns="http://www.w3.org/1998/Math/MathML">
+                              <semantics>
+                                <mrow>
+                                  <mi>L</mi>
+                                </mrow>
+                                <annotation encoding="application/x-tex">L</annotation>
+                              </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span
+                                class="katex-strut" style="height:0.6833em;"></span><span
+                                class="mord mathnormal">L</span></span></span></span></span>
                       <span class="math-sep">:</span>
-                      <span class="math-desc">Matriks Pengganda Kebalikan Leontief (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mo stretchy="false">[</mo><msub><mi>l</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">L = [l_{ij}]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal">L</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mopen">[</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0197em;">l</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0197em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose">]</span></span></span></span>)</span>
+                      <span class="math-desc">Matriks Pengganda Kebalikan Leontief (<span class="katex"><span
+                            class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <semantics>
+                                <mrow>
+                                  <mi>L</mi>
+                                  <mo>=</mo>
+                                  <mo stretchy="false">[</mo>
+                                  <msub>
+                                    <mi>l</mi>
+                                    <mrow>
+                                      <mi>i</mi>
+                                      <mi>j</mi>
+                                    </mrow>
+                                  </msub>
+                                  <mo stretchy="false">]</mo>
+                                </mrow>
+                                <annotation encoding="application/x-tex">L = [l_{ij}]</annotation>
+                              </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span
+                                class="katex-strut" style="height:0.6833em;"></span><span
+                                class="mord mathnormal">L</span><span class="mspace"
+                                style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                                style="margin-right:0.2778em;"></span></span><span class="katex-base"><span
+                                class="katex-strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span
+                                class="mopen">[</span><span class="mord"><span class="mord mathnormal"
+                                  style="margin-right:0.0197em;">l</span><span class="msupsub"><span
+                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                        style="height:0.3117em;"><span
+                                          style="top:-2.55em;margin-left:-0.0197em;margin-right:0.05em;"><span
+                                            class="pstrut" style="height:2.7em;"></span><span
+                                            class="katex-sizing reset-size6 size3 mtight"><span
+                                              class="mord mtight"><span class="mord mathnormal mtight"
+                                                style="margin-right:0.0572em;">ij</span></span></span></span></span><span
+                                        class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                        style="height:0.2861em;"><span></span></span></span></span></span></span><span
+                                class="mclose">]</span></span></span></span>)</span>
 
-                      <span class="math-sym"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span></span></span></span></span>
+                      <span class="math-sym"><span class="katex"><span class="katex-mathml"><math
+                              xmlns="http://www.w3.org/1998/Math/MathML">
+                              <semantics>
+                                <mrow>
+                                  <mi>Y</mi>
+                                </mrow>
+                                <annotation encoding="application/x-tex">Y</annotation>
+                              </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span
+                                class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal"
+                                style="margin-right:0.2222em;">Y</span></span></span></span></span>
                       <span class="math-sep">:</span>
-                      <span class="math-desc">Vektor permintaan akhir domestik dan ekspor neto (<em>n</em> &times; 1)</span>
+                      <span class="math-desc">Vektor permintaan akhir domestik dan ekspor neto (<em>n</em> &times;
+                        1)</span>
                     </div>
 
                     <div class="math-linkage-grid">
@@ -756,10 +1291,119 @@
                           <span class="math-linkage-pill">Backward Linkage</span>
                         </div>
                         <div class="math-linkage-eq-box">
-                          <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><msub><mi>L</mi><mi>j</mi></msub><mo>=</mo><mfrac><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>l</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mover accent="true"><mi>L</mi><mo>ˉ</mo></mover></mfrac></mrow><annotation encoding="application/x-tex">BL_j = \frac{\sum_{i=1}^n l_{ij}}{\bar{L}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.4441em;vertical-align:-0.3841em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.06em;"><span style="top:-2.6159em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord katex-accent mtight"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-2.7em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord mathnormal mtight">L</span></span><span style="top:-2.9523em;"><span class="pstrut" style="height:2.7em;"></span><span class="accent-body" style="left:-0.2222em;"><span class="mord mtight">ˉ</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.535em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mop mtight"><span class="mop op-symbol small-op mtight" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7385em;"><span style="top:-2.1786em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-2.931em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3214em;"><span></span></span></span></span></span></span><span class="mspace mtight" style="margin-right:0.1952em;"></span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3281em;"><span style="top:-2.357em;margin-left:-0.0197em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2819em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3841em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>
+                          <span class="katex"><span class="katex-mathml"><math
+                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                  <mrow>
+                                    <mi>B</mi>
+                                    <msub>
+                                      <mi>L</mi>
+                                      <mi>j</mi>
+                                    </msub>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                      <mrow>
+                                        <msubsup>
+                                          <mo>∑</mo>
+                                          <mrow>
+                                            <mi>i</mi>
+                                            <mo>=</mo>
+                                            <mn>1</mn>
+                                          </mrow>
+                                          <mi>n</mi>
+                                        </msubsup>
+                                        <msub>
+                                          <mi>l</mi>
+                                          <mrow>
+                                            <mi>i</mi>
+                                            <mi>j</mi>
+                                          </mrow>
+                                        </msub>
+                                      </mrow>
+                                      <mover accent="true">
+                                        <mi>L</mi>
+                                        <mo>ˉ</mo>
+                                      </mover>
+                                    </mfrac>
+                                  </mrow>
+                                  <annotation encoding="application/x-tex">BL_j = \frac{\sum_{i=1}^n l_{ij}}{\bar{L}}
+                                  </annotation>
+                                </semantics>
+                              </math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span
+                                  class="katex-strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span
+                                  class="mord mathnormal" style="margin-right:0.0502em;">B</span><span
+                                  class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span
+                                      class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                          style="height:0.3117em;"><span
+                                            style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span
+                                              class="pstrut" style="height:2.7em;"></span><span
+                                              class="katex-sizing reset-size6 size3 mtight"><span
+                                                class="mord mathnormal mtight"
+                                                style="margin-right:0.0572em;">j</span></span></span></span><span
+                                          class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                          style="height:0.2861em;"><span></span></span></span></span></span></span><span
+                                  class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span
+                                  class="mspace" style="margin-right:0.2778em;"></span></span><span
+                                class="katex-base"><span class="katex-strut"
+                                  style="height:1.4441em;vertical-align:-0.3841em;"></span><span class="mord"><span
+                                    class="mopen nulldelimiter"></span><span class="mfrac"><span
+                                      class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                          style="height:1.06em;"><span style="top:-2.6159em;"><span class="pstrut"
+                                              style="height:3em;"></span><span
+                                              class="katex-sizing reset-size6 size3 mtight"><span
+                                                class="mord mtight"><span class="mord katex-accent mtight"><span
+                                                    class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                        style="height:0.8201em;"><span style="top:-2.7em;"><span
+                                                            class="pstrut" style="height:2.7em;"></span><span
+                                                            class="mord mathnormal mtight">L</span></span><span
+                                                          style="top:-2.9523em;"><span class="pstrut"
+                                                            style="height:2.7em;"></span><span class="accent-body"
+                                                            style="left:-0.2222em;"><span
+                                                              class="mord mtight">ˉ</span></span></span></span></span></span></span></span></span></span><span
+                                            style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span
+                                              class="frac-line" style="border-bottom-width:0.04em;"></span></span><span
+                                            style="top:-3.535em;"><span class="pstrut" style="height:3em;"></span><span
+                                              class="katex-sizing reset-size6 size3 mtight"><span
+                                                class="mord mtight"><span class="mop mtight"><span
+                                                    class="mop op-symbol small-op mtight"
+                                                    style="position:relative;top:0em;">∑</span><span
+                                                    class="msupsub"><span class="vlist-t vlist-t2"><span
+                                                        class="vlist-r"><span class="vlist"
+                                                          style="height:0.7385em;"><span
+                                                            style="top:-2.1786em;margin-left:0em;margin-right:0.0714em;"><span
+                                                              class="pstrut" style="height:2.5em;"></span><span
+                                                              class="katex-sizing reset-size3 size1 mtight"><span
+                                                                class="mord mtight"><span
+                                                                  class="mord mathnormal mtight">i</span><span
+                                                                  class="mrel mtight">=</span><span
+                                                                  class="mord mtight">1</span></span></span></span><span
+                                                            style="top:-2.931em;margin-right:0.0714em;"><span
+                                                              class="pstrut" style="height:2.5em;"></span><span
+                                                              class="katex-sizing reset-size3 size1 mtight"><span
+                                                                class="mord mathnormal mtight">n</span></span></span></span><span
+                                                          class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                          class="vlist"
+                                                          style="height:0.3214em;"><span></span></span></span></span></span></span><span
+                                                  class="mspace mtight" style="margin-right:0.1952em;"></span><span
+                                                  class="mord mtight"><span class="mord mathnormal mtight"
+                                                    style="margin-right:0.0197em;">l</span><span class="msupsub"><span
+                                                      class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                                          style="height:0.3281em;"><span
+                                                            style="top:-2.357em;margin-left:-0.0197em;margin-right:0.0714em;"><span
+                                                              class="pstrut" style="height:2.5em;"></span><span
+                                                              class="katex-sizing reset-size3 size1 mtight"><span
+                                                                class="mord mtight"><span class="mord mathnormal mtight"
+                                                                  style="margin-right:0.0572em;">ij</span></span></span></span></span><span
+                                                          class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                          class="vlist"
+                                                          style="height:0.2819em;"><span></span></span></span></span></span></span></span></span></span></span><span
+                                          class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                          style="height:0.3841em;"><span></span></span></span></span></span><span
+                                    class="mclose nulldelimiter"></span></span></span></span></span>
                         </div>
                         <div class="math-linkage-note">
-                          Mengukur efek multiplikasi tarikan ke sektor hulu pemasok domestik. Nilai &gt; 1 mencerminkan sektor penghela ekonomi.
+                          Mengukur efek multiplikasi tarikan ke sektor hulu pemasok domestik. Nilai &gt; 1 mencerminkan
+                          sektor penghela ekonomi.
                         </div>
                       </div>
 
@@ -769,17 +1413,240 @@
                           <span class="math-linkage-pill">Forward Linkage</span>
                         </div>
                         <div class="math-linkage-eq-box">
-                          <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><msub><mi>L</mi><mi>i</mi></msub><mo>=</mo><mfrac><mrow><msubsup><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>l</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mover accent="true"><mi>L</mi><mo>ˉ</mo></mover></mfrac></mrow><annotation encoding="application/x-tex">FL_i = \frac{\sum_{j=1}^n l_{ij}}{\bar{L}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">F</span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.5413em;vertical-align:-0.3841em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1572em;"><span style="top:-2.6159em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord katex-accent mtight"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-2.7em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord mathnormal mtight">L</span></span><span style="top:-2.9523em;"><span class="pstrut" style="height:2.7em;"></span><span class="accent-body" style="left:-0.2222em;"><span class="mord mtight">ˉ</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.6322em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mop mtight"><span class="mop op-symbol small-op mtight" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7385em;"><span style="top:-2.1786em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-2.931em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4603em;"><span></span></span></span></span></span></span><span class="mspace mtight" style="margin-right:0.1952em;"></span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3281em;"><span style="top:-2.357em;margin-left:-0.0197em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2819em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3841em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>
+                          <span class="katex"><span class="katex-mathml"><math
+                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                  <mrow>
+                                    <mi>F</mi>
+                                    <msub>
+                                      <mi>L</mi>
+                                      <mi>i</mi>
+                                    </msub>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                      <mrow>
+                                        <msubsup>
+                                          <mo>∑</mo>
+                                          <mrow>
+                                            <mi>j</mi>
+                                            <mo>=</mo>
+                                            <mn>1</mn>
+                                          </mrow>
+                                          <mi>n</mi>
+                                        </msubsup>
+                                        <msub>
+                                          <mi>l</mi>
+                                          <mrow>
+                                            <mi>i</mi>
+                                            <mi>j</mi>
+                                          </mrow>
+                                        </msub>
+                                      </mrow>
+                                      <mover accent="true">
+                                        <mi>L</mi>
+                                        <mo>ˉ</mo>
+                                      </mover>
+                                    </mfrac>
+                                  </mrow>
+                                  <annotation encoding="application/x-tex">FL_i = \frac{\sum_{j=1}^n l_{ij}}{\bar{L}}
+                                  </annotation>
+                                </semantics>
+                              </math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span
+                                  class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span
+                                  class="mord mathnormal" style="margin-right:0.1389em;">F</span><span
+                                  class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span
+                                      class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                          style="height:0.3117em;"><span
+                                            style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span
+                                              class="pstrut" style="height:2.7em;"></span><span
+                                              class="katex-sizing reset-size6 size3 mtight"><span
+                                                class="mord mathnormal mtight">i</span></span></span></span><span
+                                          class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                          style="height:0.15em;"><span></span></span></span></span></span></span><span
+                                  class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span
+                                  class="mspace" style="margin-right:0.2778em;"></span></span><span
+                                class="katex-base"><span class="katex-strut"
+                                  style="height:1.5413em;vertical-align:-0.3841em;"></span><span class="mord"><span
+                                    class="mopen nulldelimiter"></span><span class="mfrac"><span
+                                      class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                          style="height:1.1572em;"><span style="top:-2.6159em;"><span class="pstrut"
+                                              style="height:3em;"></span><span
+                                              class="katex-sizing reset-size6 size3 mtight"><span
+                                                class="mord mtight"><span class="mord katex-accent mtight"><span
+                                                    class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                        style="height:0.8201em;"><span style="top:-2.7em;"><span
+                                                            class="pstrut" style="height:2.7em;"></span><span
+                                                            class="mord mathnormal mtight">L</span></span><span
+                                                          style="top:-2.9523em;"><span class="pstrut"
+                                                            style="height:2.7em;"></span><span class="accent-body"
+                                                            style="left:-0.2222em;"><span
+                                                              class="mord mtight">ˉ</span></span></span></span></span></span></span></span></span></span><span
+                                            style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span
+                                              class="frac-line" style="border-bottom-width:0.04em;"></span></span><span
+                                            style="top:-3.6322em;"><span class="pstrut" style="height:3em;"></span><span
+                                              class="katex-sizing reset-size6 size3 mtight"><span
+                                                class="mord mtight"><span class="mop mtight"><span
+                                                    class="mop op-symbol small-op mtight"
+                                                    style="position:relative;top:0em;">∑</span><span
+                                                    class="msupsub"><span class="vlist-t vlist-t2"><span
+                                                        class="vlist-r"><span class="vlist"
+                                                          style="height:0.7385em;"><span
+                                                            style="top:-2.1786em;margin-left:0em;margin-right:0.0714em;"><span
+                                                              class="pstrut" style="height:2.5em;"></span><span
+                                                              class="katex-sizing reset-size3 size1 mtight"><span
+                                                                class="mord mtight"><span class="mord mathnormal mtight"
+                                                                  style="margin-right:0.0572em;">j</span><span
+                                                                  class="mrel mtight">=</span><span
+                                                                  class="mord mtight">1</span></span></span></span><span
+                                                            style="top:-2.931em;margin-right:0.0714em;"><span
+                                                              class="pstrut" style="height:2.5em;"></span><span
+                                                              class="katex-sizing reset-size3 size1 mtight"><span
+                                                                class="mord mathnormal mtight">n</span></span></span></span><span
+                                                          class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                          class="vlist"
+                                                          style="height:0.4603em;"><span></span></span></span></span></span></span><span
+                                                  class="mspace mtight" style="margin-right:0.1952em;"></span><span
+                                                  class="mord mtight"><span class="mord mathnormal mtight"
+                                                    style="margin-right:0.0197em;">l</span><span class="msupsub"><span
+                                                      class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                                          style="height:0.3281em;"><span
+                                                            style="top:-2.357em;margin-left:-0.0197em;margin-right:0.0714em;"><span
+                                                              class="pstrut" style="height:2.5em;"></span><span
+                                                              class="katex-sizing reset-size3 size1 mtight"><span
+                                                                class="mord mtight"><span class="mord mathnormal mtight"
+                                                                  style="margin-right:0.0572em;">ij</span></span></span></span></span><span
+                                                          class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                          class="vlist"
+                                                          style="height:0.2819em;"><span></span></span></span></span></span></span></span></span></span></span><span
+                                          class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                          style="height:0.3841em;"><span></span></span></span></span></span><span
+                                    class="mclose nulldelimiter"></span></span></span></span></span>
                         </div>
                         <div class="math-linkage-note">
-                          Mengukur sensitivitas dorongan ke sektor hilir pengguna bahan baku saat ekonomi tumbuh. Nilai &gt; 1 mencerminkan sektor pendorong strategis.
+                          Mengukur sensitivitas dorongan ke sektor hilir pengguna bahan baku saat ekonomi tumbuh. Nilai
+                          &gt; 1 mencerminkan sektor pendorong strategis.
                         </div>
                       </div>
                     </div>
 
                     <div class="math-formula-footer-note">
                       <span class="math-footer-label">Basis Normalisasi:</span>
-                      <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>L</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msubsup><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>l</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\bar{L} = \frac{1}{n} \sum_{i=1}^n \sum_{j=1}^n l_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8201em;"></span><span class="mord katex-accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">L</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.2222em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.2809em;vertical-align:-0.4358em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8043em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2997em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8043em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4358em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0197em;">l</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0197em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> (rata-rata seluruh elemen pengganda matriks Leontief).</span>
+                      <span><span class="katex"><span class="katex-mathml"><math
+                              xmlns="http://www.w3.org/1998/Math/MathML">
+                              <semantics>
+                                <mrow>
+                                  <mover accent="true">
+                                    <mi>L</mi>
+                                    <mo>ˉ</mo>
+                                  </mover>
+                                  <mo>=</mo>
+                                  <mfrac>
+                                    <mn>1</mn>
+                                    <mi>n</mi>
+                                  </mfrac>
+                                  <msubsup>
+                                    <mo>∑</mo>
+                                    <mrow>
+                                      <mi>i</mi>
+                                      <mo>=</mo>
+                                      <mn>1</mn>
+                                    </mrow>
+                                    <mi>n</mi>
+                                  </msubsup>
+                                  <msubsup>
+                                    <mo>∑</mo>
+                                    <mrow>
+                                      <mi>j</mi>
+                                      <mo>=</mo>
+                                      <mn>1</mn>
+                                    </mrow>
+                                    <mi>n</mi>
+                                  </msubsup>
+                                  <msub>
+                                    <mi>l</mi>
+                                    <mrow>
+                                      <mi>i</mi>
+                                      <mi>j</mi>
+                                    </mrow>
+                                  </msub>
+                                </mrow>
+                                <annotation encoding="application/x-tex">\bar{L} = \frac{1}{n} \sum_{i=1}^n \sum_{j=1}^n
+                                  l_{ij}</annotation>
+                              </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span
+                                class="katex-strut" style="height:0.8201em;"></span><span
+                                class="mord katex-accent"><span class="vlist-t"><span class="vlist-r"><span
+                                      class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span
+                                          class="pstrut" style="height:3em;"></span><span
+                                          class="mord mathnormal">L</span></span><span style="top:-3.2523em;"><span
+                                          class="pstrut" style="height:3em;"></span><span class="accent-body"
+                                          style="left:-0.2222em;"><span
+                                            class="mord">ˉ</span></span></span></span></span></span></span><span
+                                class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span
+                                class="mspace" style="margin-right:0.2778em;"></span></span><span
+                              class="katex-base"><span class="katex-strut"
+                                style="height:1.2809em;vertical-align:-0.4358em;"></span><span class="mord"><span
+                                  class="mopen nulldelimiter"></span><span class="mfrac"><span
+                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                        style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut"
+                                            style="height:3em;"></span><span
+                                            class="katex-sizing reset-size6 size3 mtight"><span
+                                              class="mord mtight"><span
+                                                class="mord mathnormal mtight">n</span></span></span></span><span
+                                          style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span
+                                            class="frac-line" style="border-bottom-width:0.04em;"></span></span><span
+                                          style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span
+                                            class="katex-sizing reset-size6 size3 mtight"><span
+                                              class="mord mtight"><span
+                                                class="mord mtight">1</span></span></span></span></span><span
+                                        class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                        style="height:0.345em;"><span></span></span></span></span></span><span
+                                  class="mclose nulldelimiter"></span></span><span class="mspace"
+                                style="margin-right:0.1667em;"></span><span class="mop"><span
+                                  class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span
+                                  class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span
+                                        class="vlist" style="height:0.8043em;"><span
+                                          style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span
+                                            class="pstrut" style="height:2.7em;"></span><span
+                                            class="katex-sizing reset-size6 size3 mtight"><span
+                                              class="mord mtight"><span class="mord mathnormal mtight">i</span><span
+                                                class="mrel mtight">=</span><span
+                                                class="mord mtight">1</span></span></span></span><span
+                                          style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut"
+                                            style="height:2.7em;"></span><span
+                                            class="katex-sizing reset-size6 size3 mtight"><span
+                                              class="mord mathnormal mtight">n</span></span></span></span><span
+                                        class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                        style="height:0.2997em;"><span></span></span></span></span></span></span><span
+                                class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span
+                                  class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span
+                                  class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span
+                                        class="vlist" style="height:0.8043em;"><span
+                                          style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span
+                                            class="pstrut" style="height:2.7em;"></span><span
+                                            class="katex-sizing reset-size6 size3 mtight"><span
+                                              class="mord mtight"><span class="mord mathnormal mtight"
+                                                style="margin-right:0.0572em;">j</span><span
+                                                class="mrel mtight">=</span><span
+                                                class="mord mtight">1</span></span></span></span><span
+                                          style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut"
+                                            style="height:2.7em;"></span><span
+                                            class="katex-sizing reset-size6 size3 mtight"><span
+                                              class="mord mathnormal mtight">n</span></span></span></span><span
+                                        class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                        style="height:0.4358em;"><span></span></span></span></span></span></span><span
+                                class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span
+                                  class="mord mathnormal" style="margin-right:0.0197em;">l</span><span
+                                  class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span
+                                        class="vlist" style="height:0.3117em;"><span
+                                          style="top:-2.55em;margin-left:-0.0197em;margin-right:0.05em;"><span
+                                            class="pstrut" style="height:2.7em;"></span><span
+                                            class="katex-sizing reset-size6 size3 mtight"><span
+                                              class="mord mtight"><span class="mord mathnormal mtight"
+                                                style="margin-right:0.0572em;">ij</span></span></span></span></span><span
+                                        class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                        style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span>
+                        (rata-rata seluruh elemen pengganda matriks Leontief).</span>
                     </div>
                   </div>
                 </td>
@@ -797,9 +1664,10 @@
   <footer class="editorial-footer">
     <div class="footer-inner">
       <div class="footer-copy-col">
-        <h3 class="footer-title">Paradoks Hilirisasi: Proyek Investigasi Visualisasi Data</h3>
+        <h3 class="footer-title">Realitas Hilirisasi: Proyek Visualisasi Data</h3>
         <p class="footer-copy">
-          Disusun untuk Ujian Akhir Semester (UAS) Mata Kuliah Visualisasi Data. Seluruh grafik dibangun secara prosedural menggunakan D3.js v7, Scrollama, dan sistem desain bertaraf jurnalistik data tanpa ketergantungan pustaka antarmuka AI generic.
+          Disusun untuk Ujian Akhir Semester (UAS) Mata Kuliah Visualisasi Data. Seluruh grafik dibangun secara
+          prosedural menggunakan D3.js v7, Scrollama, dan sistem desain bertaraf jurnalistik data.
         </p>
         <p class="footer-copy" style="margin-top: 10px; font-size: 0.78rem;">
           Data dan materi referensi: Badan Pusat Statistik RI
@@ -816,4 +1684,5 @@
   </footer>
 
 </body>
+
 </html>
